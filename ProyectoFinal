@@ -6,6 +6,14 @@
 - Ivan Catala Prats
 
 ## 1. Introducción
+#Este trabajo consiste en un proyecto de gestión de un CPD virtual que estará dedicado exclusivamente a alojar la red social para la comparación de precios de
+#supermercados, proporcionado los recursos informáticos necesarios para garantizar
+#su escalabilidad, seguridad y disponibilidad.
+#En el CPD se encargará de almacenar toda la información de la red social más
+#todos los datos que pasen por la red es decir los usuarios, productos, imágenes,
+#precios, ubicaciones de los supermercados.
+
+
 
 ### 1.1 Objetivos del Proyecto
 
