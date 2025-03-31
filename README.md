@@ -4,5 +4,4 @@
 - Daniel Pablo Dumea
 - Jordi Escriva Montaner
 - Ivan Catala Prats
-
-## 1. I
+  
