@@ -954,15 +954,19 @@ Donde pone Discos Virtuales nos situamos y en la parte de tareas le decimos nuev
 
 **FIGURA-3:.** Le ponemos nombre al disco virtual 
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.005.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%205.png)
 
 **FIGURA-4:.** Seleccionamos la distribución de almacenamiento que va a tener el disco virtual 
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.006.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%206.png)
 
 **FIGURA-5:** Le indicamos el tipo de aprovisionamiento que será fijo 
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.007.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%207.png)
+
+**FIGURA-5:** Le indicamos el tipo de aprovisionamiento que será fijo 
+
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%208.png)
 
 **FIGURA-6:** Le** especificamos el tamaño del disco duro. 
 
