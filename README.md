@@ -102,7 +102,7 @@ Este trabajo consiste en un proyecto de gestión de un CPD virtual que estará d
 
 En el CPD se encargará de almacenar toda la información de la red social más todos los datos que pasen por la red es decir los usuarios, productos, imágenes, precios, ubicaciones de los supermercados. 
 
-1. **Objetivos<a name="_page2_x69.00_y348.00"></a> del Proyecto**
+## 1.1 Objetivos del Proyecto
 - **Garantir la disponibilidad y escalabilidad de la aplicación** 
 - Hay que asegurar que la aplicación esté disponible 24/7 para todos los usuarios. 
 - Tenemos que aumentar la capacidad sobre si crece el número de usuarios de la aplicación.  
