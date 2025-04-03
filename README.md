@@ -963,11 +963,11 @@ Donde pone Discos Virtuales nos situamos y en la parte de tareas le decimos nuev
 
 Luego de repetir esto 3 veces para crear los 3 disco virtuales nos vamos al administrador de discos.  
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.009.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2010.png)
 
 **FIGURA-8:** Podemos ver que ya tenemos los 3 discos creados por software virtuales para raid 5.  
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.010.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2011.png)
 
 **FIGURA-9:** En el administrador del servidor nos vamos a los grupos de almacenamiento para poder añadir el disco físico que tenemos a los discos virtuales que hemos creado.**  
 
