@@ -89,9 +89,6 @@
 
  
 
-![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%201.png)
-
-
 
    
 1. **Introducción<a name="_page2_x69.00_y148.00"></a>** 
@@ -250,7 +247,7 @@ En nuestro grupo hemos llegado a la conclusión de que Dani será el líder y se
 
 En la Plataforma trello tenemos toda la planificación del proyecto desde ahí plateamos las actividades y desde ahí podemos organizarlas por: hechas no hechas y en proceso, también tenemos un índice donde tenemos todas las tareas presentes. El grupo elegirá dos actividades que serán designadas a un miembro para hacer y será el responsable de sus tareas, luego el grupo lo evaluará y el líder tendrá la última palabra, después a la hora de exponer debatiremos como lo estructuraremos y como lo presentaremos.
 
-![](Aspose.Words.d581e6ea-9d1f-465e-ab05-9ca4a9130a14.002.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%201.png)
 
 1. **Los<a name="_page8_x69.00_y630.00"></a> Roles del equipo**
 
