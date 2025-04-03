@@ -10,7 +10,7 @@
 
 
 -[1. Introducción](#1-Introducción)  
-## 2. Objetivos del Proyecto  
+-[2. Objetivos del Proyecto](#2-Objetivos-del-Proyecto)
 ## 3. Requisitos  
 ### 3.1 Requisitos Funcionales  
 ### 3.2 Requisitos No Funcionales  
