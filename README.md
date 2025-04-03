@@ -36,6 +36,55 @@
 1. [Evaluación de los riesgos ___________________________________________________ 16 ](#_page15_x69.00_y548.00)
 1. [Plan de contingencias ______________________________________________________ 17 ](#_page16_x69.00_y73.00)
 1. [Protocolos de actuación ____________________________________________________ 17 ](#_page16_x69.00_y538.00)
+
+[1. Diseño de la arquitectura del  sistema __________________________________________ 3 ](#_page2_x69.00_y95.00)
+
+1. [Segmentación por VLAN’s ____________________________________________________ 3 ](#_page2_x69.00_y693.00)
+
+GRUPO 21 
+
+2. [Conectividad y Flujo de Datos ________________________________________________ 4 ](#_page3_x69.00_y304.00)
+2. [Seguridad y Respaldo ________________________________________________________ 4 ](#_page3_x69.00_y436.00)
+1. [Servidores __________________________________________________________________ 6 ](#_page5_x69.00_y73.00)
+1. [Almacenamiento ____________________________________________________________](#_page6_x69.00_y73.00) [7 ](#_page6_x69.00_y73.00)
+1. [Infraestructura Adicional _____________________________________________________ 7 ](#_page6_x69.00_y339.00)
+1. [Mecanismos de Redundancia ________________________________________________ 8 ](#_page7_x69.00_y440.00)
+1. [Herramientas de Virtualización _______________________________________________ 9 ](#_page8_x69.00_y73.00)
+1. [Contratación de Servicios AWS S3 ____________________________________________ 9 ](#_page8_x69.00_y445.00)
+1. [Dispositivos que vamos a tener. _____________________________________________ 10 ](#_page9_x69.00_y73.00)
+3. [Diseño de la seguridad del sistema ___________________________________________ 10 ](#_page9_x69.00_y312.00)
+   1. [Medidas de Protección _____________________________________________________ 10 ](#_page9_x69.00_y353.00)
+   1. [Protección contra amenazas internas ________________________________________ 11 ](#_page10_x69.00_y73.00)
+   1. [Respuesta ante ciberataques _______________________________________________ 11 ](#_page10_x69.00_y295.00)
+   1. politicas de seguridad \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 10 
+   1. [Políticas de protección de datos _____________________________________________ 13 ](#_page12_x69.00_y73.00)
+   1. [Seguridad en dispositivos móviles ___________________________________________ 13 ](#_page12_x69.00_y526.00)
+   1. [Resultado esperado ________________________________________________________ 14 ](#_page13_x69.00_y249.00)
+3. [Diseño de el plan de recuperación frente a desastres. __________________________ 14 ](#_page13_x69.00_y692.00)
+   1. [Estrategia de Copias de Seguridad ___________________________________________ 15 ](#_page14_x69.00_y211.00)
+   1. [Almacenamiento de las Copias ______________________________________________ 15 ](#_page14_x69.00_y435.00)
+   1. [Restauración de Sistemas y Datos ___________________________________________ 15 ](#_page14_x69.00_y640.00)
+   1. [Mecanismos de Redundancia _______________________________________________ 16 ](#_page15_x69.00_y152.00)
+   1. [Documentación y Pruebas Regulares ________________________________________ 16 ](#_page15_x69.00_y377.00)
+3. [Manual de Usuario del CPD __________________________________________________ 17 ](#_page16_x69.00_y73.00)
+   1. [Acceso al Sistema _________________________________________________________ 17 ](#_page16_x69.00_y209.00)
+   1. [Uso de Recursos del CPD __________________________________________________ 17 ](#_page16_x69.00_y412.00)
+   1. [Resolución de Problemas __________________________________________________ 17 ](#_page16_x69.00_y663.00)
+3. [Guía de Administración del CPD ______________________________________________ 18 ](#_page17_x69.00_y285.00)
+1. [Gestión de Servidores ______________________________________________________ 18 ](#_page17_x69.00_y414.00)
+1. [Gestión de Red _____________________________________________________________ 19 ](#_page18_x69.00_y170.00)
+1. [Seguridad del CPD _________________________________________________________ 19 ](#_page18_x69.00_y580.00)
+1. [Procedimientos de Recuperación ____________________________________________ 20 ](#_page19_x69.00_y359.00)
+5. [Documentación y Auditorías ________________________________________________ 20 ](#_page19_x69.00_y650.00)
+1. Diseño<a name="_page2_x69.00_y95.00"></a> de la arquitectura del sistema 
+
+![](Aspose.Words.38787952-61e2-48b2-92b6-4d1d652d9a9e.002.jpeg)
+
+
+
+
+
+   
 1. **Introducción<a name="_page2_x69.00_y148.00"></a>** 
 
 **CPD PARA UNA RED SOCIAL PARA PRODUCTOS DE SUPER MERCADO**  
@@ -434,48 +483,6 @@ Para el tema de monitorización vamos a utilizar Prometheus ya que es más escal
 1. Verificación y Restauración 
 1. Informe y Prevención 
 **Página 17 de 17  Daniel Dumea, Ivan Catalá, Jordi Escriva**
-[1. Diseño de la arquitectura del  sistema __________________________________________ 3 ](#_page2_x69.00_y95.00)
-
-1. [Segmentación por VLAN’s ____________________________________________________ 3 ](#_page2_x69.00_y693.00)
-
-GRUPO 21 
-
-2. [Conectividad y Flujo de Datos ________________________________________________ 4 ](#_page3_x69.00_y304.00)
-2. [Seguridad y Respaldo ________________________________________________________ 4 ](#_page3_x69.00_y436.00)
-1. [Servidores __________________________________________________________________ 6 ](#_page5_x69.00_y73.00)
-1. [Almacenamiento ____________________________________________________________](#_page6_x69.00_y73.00) [7 ](#_page6_x69.00_y73.00)
-1. [Infraestructura Adicional _____________________________________________________ 7 ](#_page6_x69.00_y339.00)
-1. [Mecanismos de Redundancia ________________________________________________ 8 ](#_page7_x69.00_y440.00)
-1. [Herramientas de Virtualización _______________________________________________ 9 ](#_page8_x69.00_y73.00)
-1. [Contratación de Servicios AWS S3 ____________________________________________ 9 ](#_page8_x69.00_y445.00)
-1. [Dispositivos que vamos a tener. _____________________________________________ 10 ](#_page9_x69.00_y73.00)
-3. [Diseño de la seguridad del sistema ___________________________________________ 10 ](#_page9_x69.00_y312.00)
-   1. [Medidas de Protección _____________________________________________________ 10 ](#_page9_x69.00_y353.00)
-   1. [Protección contra amenazas internas ________________________________________ 11 ](#_page10_x69.00_y73.00)
-   1. [Respuesta ante ciberataques _______________________________________________ 11 ](#_page10_x69.00_y295.00)
-   1. politicas de seguridad \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 10 
-   1. [Políticas de protección de datos _____________________________________________ 13 ](#_page12_x69.00_y73.00)
-   1. [Seguridad en dispositivos móviles ___________________________________________ 13 ](#_page12_x69.00_y526.00)
-   1. [Resultado esperado ________________________________________________________ 14 ](#_page13_x69.00_y249.00)
-3. [Diseño de el plan de recuperación frente a desastres. __________________________ 14 ](#_page13_x69.00_y692.00)
-   1. [Estrategia de Copias de Seguridad ___________________________________________ 15 ](#_page14_x69.00_y211.00)
-   1. [Almacenamiento de las Copias ______________________________________________ 15 ](#_page14_x69.00_y435.00)
-   1. [Restauración de Sistemas y Datos ___________________________________________ 15 ](#_page14_x69.00_y640.00)
-   1. [Mecanismos de Redundancia _______________________________________________ 16 ](#_page15_x69.00_y152.00)
-   1. [Documentación y Pruebas Regulares ________________________________________ 16 ](#_page15_x69.00_y377.00)
-3. [Manual de Usuario del CPD __________________________________________________ 17 ](#_page16_x69.00_y73.00)
-   1. [Acceso al Sistema _________________________________________________________ 17 ](#_page16_x69.00_y209.00)
-   1. [Uso de Recursos del CPD __________________________________________________ 17 ](#_page16_x69.00_y412.00)
-   1. [Resolución de Problemas __________________________________________________ 17 ](#_page16_x69.00_y663.00)
-3. [Guía de Administración del CPD ______________________________________________ 18 ](#_page17_x69.00_y285.00)
-1. [Gestión de Servidores ______________________________________________________ 18 ](#_page17_x69.00_y414.00)
-1. [Gestión de Red _____________________________________________________________ 19 ](#_page18_x69.00_y170.00)
-1. [Seguridad del CPD _________________________________________________________ 19 ](#_page18_x69.00_y580.00)
-1. [Procedimientos de Recuperación ____________________________________________ 20 ](#_page19_x69.00_y359.00)
-5. [Documentación y Auditorías ________________________________________________ 20 ](#_page19_x69.00_y650.00)
-1. Diseño<a name="_page2_x69.00_y95.00"></a> de la arquitectura del sistema 
-
-![](Aspose.Words.38787952-61e2-48b2-92b6-4d1d652d9a9e.002.jpeg)
 
 1. Segmentación<a name="_page2_x69.00_y693.00"></a> por VLAN’s 
 - **VLAN 10 – Usuarios internos** 
