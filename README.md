@@ -80,7 +80,15 @@ GRUPO 21
 
 ![](Aspose.Words.38787952-61e2-48b2-92b6-4d1d652d9a9e.002.jpeg)
 
+GRUPO 24 
 
+1. [Instalación del Servidor ........................................................................................ 3 ](#_page2_x69.00_y73.00)
+1. [Instalación de RAID 5 por Software ....................................................................... 5 ](#_page4_x69.00_y73.00)
+1. [Creación de los usuarios para los trabajadores. ................................................... 11 ](#_page10_x69.00_y73.00)
+4. [Instalación de Aomei Backupper Server y una copia del disco del sistema operativo.  ............................................................................................................................ 15 ](#_page14_x69.00_y73.00)
+4. [Restauración de la copia de seguridad del sistema .............................................. 19 ](#_page18_x69.00_y73.00)
+4. [Ubuntu Server ................................................................................................... 22 ](#_page21_x69.00_y73.00)
+4. [Romper el raid y recuperarlo ............................................................................... 22 ](#_page21_x69.00_y406.00)
 
 
 
@@ -902,15 +910,7 @@ Esta guía está destinada a los administradores responsables de la gestión, ma
 - Actualizar la documentación técnica tras cualquier cambio significativo en la infraestructura del CPD. 
 Página 21 de 21  Daniel Dumea, Jordi Escriva, Ivan Catala
 
-GRUPO 24 
 
-1. [Instalación del Servidor ........................................................................................ 3 ](#_page2_x69.00_y73.00)
-1. [Instalación de RAID 5 por Software ....................................................................... 5 ](#_page4_x69.00_y73.00)
-1. [Creación de los usuarios para los trabajadores. ................................................... 11 ](#_page10_x69.00_y73.00)
-4. [Instalación de Aomei Backupper Server y una copia del disco del sistema operativo.  ............................................................................................................................ 15 ](#_page14_x69.00_y73.00)
-4. [Restauración de la copia de seguridad del sistema .............................................. 19 ](#_page18_x69.00_y73.00)
-4. [Ubuntu Server ................................................................................................... 22 ](#_page21_x69.00_y73.00)
-4. [Romper el raid y recuperarlo ............................................................................... 22 ](#_page21_x69.00_y406.00)
 1. **Instalación<a name="_page2_x69.00_y73.00"></a> del Servidor** 
 
 Primero que todo, empezamos escogiendo un ordenador de todos los que habían para empezar con el proceso del servidor. Una vez escogido vimos que tenía un disco duro de 500GB lo que era bastante capacidad, pero decidimos añadir otro disco después de la instalación del sistema para hacer un RAID. 
