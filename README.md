@@ -9,7 +9,7 @@
 # Índice
 
 
--[1. Introducción](#1.Introducción)  
+-[1. Introducción](#Introducción)  
 ## 2. Objetivos del Proyecto  
 ## 3. Requisitos  
 ### 3.1 Requisitos Funcionales  
