@@ -434,3 +434,464 @@ Para el tema de monitorización vamos a utilizar Prometheus ya que es más escal
 1. Verificación y Restauración 
 1. Informe y Prevención 
 **Página 17 de 17  Daniel Dumea, Ivan Catalá, Jordi Escriva**
+[1. Diseño de la arquitectura del  sistema __________________________________________ 3 ](#_page2_x69.00_y95.00)
+
+1. [Segmentación por VLAN’s ____________________________________________________ 3 ](#_page2_x69.00_y693.00)
+
+GRUPO 21 
+
+2. [Conectividad y Flujo de Datos ________________________________________________ 4 ](#_page3_x69.00_y304.00)
+2. [Seguridad y Respaldo ________________________________________________________ 4 ](#_page3_x69.00_y436.00)
+1. [Servidores __________________________________________________________________ 6 ](#_page5_x69.00_y73.00)
+1. [Almacenamiento ____________________________________________________________](#_page6_x69.00_y73.00) [7 ](#_page6_x69.00_y73.00)
+1. [Infraestructura Adicional _____________________________________________________ 7 ](#_page6_x69.00_y339.00)
+1. [Mecanismos de Redundancia ________________________________________________ 8 ](#_page7_x69.00_y440.00)
+1. [Herramientas de Virtualización _______________________________________________ 9 ](#_page8_x69.00_y73.00)
+1. [Contratación de Servicios AWS S3 ____________________________________________ 9 ](#_page8_x69.00_y445.00)
+1. [Dispositivos que vamos a tener. _____________________________________________ 10 ](#_page9_x69.00_y73.00)
+3. [Diseño de la seguridad del sistema ___________________________________________ 10 ](#_page9_x69.00_y312.00)
+   1. [Medidas de Protección _____________________________________________________ 10 ](#_page9_x69.00_y353.00)
+   1. [Protección contra amenazas internas ________________________________________ 11 ](#_page10_x69.00_y73.00)
+   1. [Respuesta ante ciberataques _______________________________________________ 11 ](#_page10_x69.00_y295.00)
+   1. politicas de seguridad \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 10 
+   1. [Políticas de protección de datos _____________________________________________ 13 ](#_page12_x69.00_y73.00)
+   1. [Seguridad en dispositivos móviles ___________________________________________ 13 ](#_page12_x69.00_y526.00)
+   1. [Resultado esperado ________________________________________________________ 14 ](#_page13_x69.00_y249.00)
+3. [Diseño de el plan de recuperación frente a desastres. __________________________ 14 ](#_page13_x69.00_y692.00)
+   1. [Estrategia de Copias de Seguridad ___________________________________________ 15 ](#_page14_x69.00_y211.00)
+   1. [Almacenamiento de las Copias ______________________________________________ 15 ](#_page14_x69.00_y435.00)
+   1. [Restauración de Sistemas y Datos ___________________________________________ 15 ](#_page14_x69.00_y640.00)
+   1. [Mecanismos de Redundancia _______________________________________________ 16 ](#_page15_x69.00_y152.00)
+   1. [Documentación y Pruebas Regulares ________________________________________ 16 ](#_page15_x69.00_y377.00)
+3. [Manual de Usuario del CPD __________________________________________________ 17 ](#_page16_x69.00_y73.00)
+   1. [Acceso al Sistema _________________________________________________________ 17 ](#_page16_x69.00_y209.00)
+   1. [Uso de Recursos del CPD __________________________________________________ 17 ](#_page16_x69.00_y412.00)
+   1. [Resolución de Problemas __________________________________________________ 17 ](#_page16_x69.00_y663.00)
+3. [Guía de Administración del CPD ______________________________________________ 18 ](#_page17_x69.00_y285.00)
+1. [Gestión de Servidores ______________________________________________________ 18 ](#_page17_x69.00_y414.00)
+1. [Gestión de Red _____________________________________________________________ 19 ](#_page18_x69.00_y170.00)
+1. [Seguridad del CPD _________________________________________________________ 19 ](#_page18_x69.00_y580.00)
+1. [Procedimientos de Recuperación ____________________________________________ 20 ](#_page19_x69.00_y359.00)
+5. [Documentación y Auditorías ________________________________________________ 20 ](#_page19_x69.00_y650.00)
+1. Diseño<a name="_page2_x69.00_y95.00"></a> de la arquitectura del sistema 
+
+![](Aspose.Words.38787952-61e2-48b2-92b6-4d1d652d9a9e.002.jpeg)
+
+1. Segmentación<a name="_page2_x69.00_y693.00"></a> por VLAN’s 
+- **VLAN 10 – Usuarios internos** 
+- Contiene las estaciones de trabajo con direcciones en el rango 192.168.10.X 
+- Se conectan a los switches de red para acceder a los servicios del CPD.
+- **VLAN 20 Administración y Operaciones:** 
+- Incluye equipos administrativos con direcciones en 192.168.20.X
+- Tienen acceso restringido a ciertos servicios. 
+- **VLAN 30 – Infraestructura del CPD:** 
+- Aloja los servidores y dispositivos de almacenamiento.
+- Incluye el Servidor Controlador Principal, el Servidor de Aplicaciones y Bases de Datos, y el Servidor de Respaldo que está ubicado en un diferente lugar. 
+- Integra sistemas como NAS y SAI para garantizar la continuidad del servicio. 
+2. Conectividad<a name="_page3_x69.00_y304.00"></a> y Flujo de Datos 
+- Un switch principal se encarga de interconectar las VLANs.
+- El tráfico de datos fluye desde las estaciones de trabajo (VLAN 10 y VLAN 20) hacia los servidores (VLAN 30). 
+- Existe un enlace a Internet a través de un router.
+3. Seguridad<a name="_page3_x69.00_y436.00"></a> y Respaldo 
+- **Servidor de Respaldo** para copias de seguridad y recuperación ante fallos.
+- **SAI** para evitar pérdida de datos ante cortes eléctricos.
+- **NAS** como almacenamiento centralizado para compartir archivos de manera eficiente. 
+2. **Selección de maquinaria i software**
+
+Primero que todo haremos una comparativa de los S.O que podemos utilizar como son el Ubuntu Server y el MS Windows Server 2022. Para saber cuál de los dos nos beneficia más a nuestro CPD para gestionarlo y ponerle las aplicaciones que sean necesarias.  
+
+**Comparativa entre los dos sistemas operativos:** 
+
+
+
+|**Características** |**Ubuntu Server 22.04** ||**Windows Server 2022** |
+| - | - | :- | - |
+|**Costo** |Es gratis de código abierto ||Tiene licencias de pago  |
+|**Facilidad de uso** |Se gestiona con comandos||Tiene interfaz gráfica más |
+||||amigable e intuitivo.  |
+|**Compatibilidad** |Con aplicaciones web, ||Tiene un mejor soporte |
+|**Software** |bases de datos y ||para aplicaciones |
+||contenedores (MySQL, ||comerciales  |
+||Docker) |||
+|**Rendimiento** |Ligero, excelente ||Tiene un alto rendimiento, |
+||rendimiento en hardware ||pero también un mayor |
+||más modesto ||consumo |
+|**Seguridad** |Una comunidad activa ||Secured-core, SMB cifrado |
+||||y TILS 1.3 por defecto |
+|**Virtualización** |LXD, KVM y soporte ||Hyper-V, soporte nativo |
+||avanzado para ||para máquinas virtuales |
+||contenedores |||
+|**Escalabilidad** |Lo puedes escalable, ideal ||Muy escalable |
+||para nubes híbridas y ||especialmente en |
+||clústeres.  ||entornos de Microsoft |
+|**Soporte en la nube** |Integración con AWS y ||Soporte con Azure y |
+||Azure ||también con Windows |
+||||admin |
+|**Soporte Técnico** |Puede tener soporte ||Licencias de Microsoft que |
+||comercial, pero es más ||son de pago para dar |
+||opcional  ||soporte  |
+
+**Qué sistema vamos a elegir:**  
+
+Creemos que la mejor opción para gestionar nuestro CPD la mejor opción es la de **Windows Server 22**. Por qué podemos tener una interfaz gráfica que puede ser mucho más intuitiva que la de Ubuntu que sería por comandos entonces la administración con Windows sería más fácil por ser gráficamente y por las aplicaciones que incluye con Microsoft que son de pago pero que nos pueden ayudar mucho a la gestión del CPD para la aplicación de los productos de los supermercados, como Active Directory, SQL Server y Azure, además de soporte nativo para Hyper-V, ideal para virtualización. Su enfoque en la seguridad incluye características avanzadas como Secured-Core, SMB cifrado y TLS 1.3 por defecto, garantizando protección robusta para tus datos.
+
+1. Servidores
+
+<a name="_page5_x69.00_y73.00"></a>**Servidor 1: Controlador principal** 
+
+- Funciones: Active Directory (gestión de usuarios), DNS, DHCP y supervisión básica. 
+- Hardware:  
+- CPU: Procesador de 8 núcleos Intel Xeon  
+- RAM: 32 GB 
+- Almacenamiento: SSD  4 TB para el S.O y los servicios  
+
+**Servidor 2: Servidor de Aplicaciones y Bases de Datos**
+
+- Funciones: SQL Server, aplicaciones empresariales o software de gestión de productos. 
+- Hardware: 
+- CPU: Procesador similar al primer servidor o más potente (16 núcleos).
+- RAM: 32-GB (según la carga de la base de datos la podemos aumentar). 
+- Almacenamiento: 2 TB en SSD para datos críticos y HDD de respaldo si se manejan grandes volúmenes.
+
+**Servidor 3: Sera el servidor de respaldo**  
+
+**Almacenaremos las copias de seguridad que tengamos en los servidores 1 y 2 por sí hay algun problema poder recuperar la información para poder seguir trabajando.**  
+
+- Disponer de copias espejo para permitir una rápida restauración de Active Directory, servicios que tengamos instalados. 
+- Sincronización de base de datos mediante SQL para poder recuperarlo si fuera necesario.  
+- Configuraciones de redundancia (RAID) para mayor fiabilidad. 
+2. Almacenamiento
+
+<a name="_page6_x69.00_y73.00"></a>El almacenamiento que hemos elegido es el siguiente: 
+
+- **Cabina de almacenamiento NAS (almacenamiento centralizado):**
+- Capacidad inicial: 20 TB (RAID 5 para redundancia). 
+- NAS será dedicado. 
+- Tipos de disco: 
+- SSD para datos críticos de alta velocidad.
+- SSD para datos menos utilizados o copias de seguridad.
+- **Opciones de escalabilidad:**
+- Si necesitamos más servicios podremos contratar los servicios en la nube como Azure o AWS S3 para almacenamiento adicional, lo que nos puede reducir la necesidad de grandes inversiones iniciales en hardware.
+3. Infraestructura<a name="_page6_x69.00_y339.00"></a> Adicional 
+
+Para tener una virtualización estable, seguro y eficiente, es esencial contar con una infraestructura adicional que este adecuada. Eso incluye sistemas de alimentación redundantes, equipos de red avanzados y mecanismos de refrigeración eficientes. 
+
+` `**Sistemas de alimentación redundantes** 
+
+Vamos a utilizar UPS en línea: Nos ofrece una protección constante contra las variaciones de voltaje y cortes.  
+
+**Características**:  
+
+- Tiene una autonomía para mantener el sistema activo durante el tiempo necesario para activar generadores o aturar las máquinas virtuales de manera segura.  
+- Podemos monitorizar de forma remota y tener notificaciones en tiempo real para avisarnos de lo que queramos. 
+- El tema de la redundancia lo vamos a configurar N+1 para poder asegurar la continuidad operativa en caso de fallo de algún modulo. 
+
+**Sistema de Refrigeración para Evitar sobrecalentamiento y otros problemas.**
+
+Una buena gestión y diseño de refrigeración evita daños a los servidores y mantiene el rendimiento optimo de la infraestructura de virtualización. 
+
+Vamos a utilizar la refrigeración por aire pensamos que es la más adecuada para nuestro CPD.  
+
+**Refrigeración por aire características:**  
+
+- Vamos a utilizar unidades de climatización (CRAC – Computer Room Air Conditioning). 
+- Flujos de aire optimizados con ventiladores i con los racks cerrados podemos dirigir aire frio hasta los servidores que tenemos y al nas. 
+- También tendremos la configuración de los pasillos calientes que recogen el aire que expulsa por la parte posterior de los servidores. 
+
+**Pondremos también otros objetos adicionales como:** 
+
+- Sensores de Temperatura y humanidad para tenerlo monitorizada en tiempo real.  
+- Sistemas de ventilación redundantes para evitar los puntos de fallos únicos. 
+- Utilizaremos sistema de refrigeración con tecnología de ahora energético para reducir costes operativos.  
+4. Mecanismos<a name="_page7_x69.00_y440.00"></a> de Redundancia 
+
+Sistemas de alimentación:  
+
+Vamos a obtener un **SAIs** para poder garantizar la disponibilidad de energía en caso de cortes eléctricos, poder tener un tiempo que es limitado, pero nos pude salvar para poder hacer una copia de seguridad o también guardar la información en el NAS externo que tenemos para las copias de seguridad.  
+
+También instalaremos generadores eléctricos junto al SAIs en el CPD para garantizar la continuidad del servicio durante los cortes eléctricos que podamos tener. 
+
+5. Herramientas<a name="_page8_x69.00_y73.00"></a> de Virtualización
+
+**Hyper-V:** Utilizaremos el hyper-v que ya viene integrado en Windows Server 2022 que nos permitirá crear y gestionar las máquinas virtuales que sean necesarias para nuesto centro de datos. Esto nos ayudará en los servidores y mejorar la eficiencia de hardware.  
+
+**Aplicaciones de Gestión:**  
+
+**Microsoft System Center Virtual Machine Manager (SCVMM):** Es una herramienta que nos ayudara a administrar y automatizar la implementación y la gestión de las máquinas virtuales en el entorno de Hyper-V.  
+
+**Microsoft Azure  Site Recovery:** Este servicio nos dará protección y recuperación ante desastres que nos pueda surgir en las máquinas virtuales es como poder tener un respaldo por si pasara algo.   
+
+**Monitoreo y Supervisión:** Utilizaremos Microsoft Operations Management Suite (OMS) para el monitorear el rendimiento y poder controlar la salud de nuestra infraestructura para poder hacer cambios antes de que se rompa algo de dentro del CPD y asi nos podemos proteger de que antes de que se rompa lo podemos detectar y cambiar para 
+
+no parar el servicio del CPD.  
+
+6. Contratación<a name="_page8_x69.00_y445.00"></a> de Servicios AWS S3
+
+Vamos a contratar servicios externos que serán los de AWS S3 que es de Amazon. Lo vamos a contratar para poder mejor la gestión y el almacenamiento de datos de la aplicación del supermercado de la comparación de los precios. 
+
+**Características:**  
+
+- **Almacenamiento Seguro y Escalable:** AWS S3 no permite almacenar grandes volúmenes de datos seguro y escalable dependiendo de las necesidades. 
+- **Alta Disponibilidad:** Con los servicios de AWS S3 nos podemos asegurar de que los datos estarán accesibles incluso cuando tengamos picos de tráfico altos. 
+- **Copia de Seguridad y Recuperación:** AWS S3 nos facilita la creación de copias de seguridad regulares y poder recuperar los datos de forma rápida y segura en caso de tener algún problema o fallo. 
+7. Dispositivos<a name="_page9_x69.00_y73.00"></a> que vamos a tener. 
+- 5 Ordenadores: Que estarán en diferentes VLANS para poder gestionar el CPD 
+- 2 switch: Para poder conectar los dispositivos de red como los servidores, ordenadores.  
+- 1 Router: Para tener salida a Internet y también poder comunicarse entre las redes locales del CPD 
+- 3 Servidores: Que serán el corazón del CPD donde se alojan las aplicaciones, servicios y bases de datos.  
+- 1 NAS: Lo tendremos conectado a la red para poder guardar y compartir los datos.  
+- 1 SAI: Nos permitirá poder guardar información cuando tengamos un fallo eléctrico temporal y no tendremos suministro eléctrico.
+3. Diseño<a name="_page9_x69.00_y312.00"></a> de la seguridad del sistema 
+1. Medidas<a name="_page9_x69.00_y353.00"></a> de Protección
+- **3.1.1 Firewall perimetral:** 
+
+Se instalará un sistema de cortafuegos para filtrar el tráfico que entra y sale del CPD (Como el software Waf) . Se configurarán reglas específicas para bloquear Direcciones ip sospechosas, limitar protocolos no necesarios y garantir que solo las conexiones seguras pudiendo acceder al sistema. Ejemplo: bloqueo automático de cualquier intento de conexión desde direcciones ip que no cumplan los requisitos de seguridad establecidos.
+
+- **3.1.2 Sistemas de detección y prevención de intrusos (IDS/IPS)**
+
+  Se hará uso de un sistema avanzado para monitorear el tráfico en tiempo real (Como el software snort), identificar posibles intentos de intrusión y tomar medidas preventivas automáticamente. Eso incluye, por ejemplo, el bloqueo de tráfico que muestre patrones de ataque como SQL inyection.
+
+- **3.1.3 Cifrado de Comunicaciones**
+
+  Todas las comunicaciones entre el usuario y la plataforma utilizaran protocolos seguros como HTTPS mediante certificado SSL/TLS. 
+
+  Eso garantiza que los datos sensibles, como las contraseñas o las preferencias de productos, no sean interceptados por agentes externos
+
+2. Protección<a name="_page10_x69.00_y73.00"></a> contra amenazas internas
+- **3.2.1 Cifrado de base de datos** 
+
+  Se utilizará algoritmos de cifrado como AES-256 Para proteger la información almacenada. Eso significa que, si un atacante consigue acceder a la base de datos, no podrá leer los datos sin las llaves de descifrado.
+
+- **3.2.2 Acceso restringido a los datos**
+
+Se implementará un modelo de mínimo privilegio que garantice que cada usuario del sistema solo tiene acceso a los datos necesarios para su función. Por ejemplo, los empleados solo pueden ver los datos relacionados con sus tareas y no pueden acceder a la información de los clientes. 
+
+3. Respuesta<a name="_page10_x69.00_y295.00"></a> ante ciberataques
+- **3.3.1 Copias de seguridad regulares:**
+
+Se configurarán copias de seguridad automatizadas que se guardarán en servidores redundantes, situados en ubicaciones geográficas diferentes para prevenir la perdida de datos en caso de un ataque o desastre
+
+Ejemplo: si un ataque de ransomware afecta el CPD principal, se podrá restaurar el sistema desde una copia de seguridad hecha 24 horas antes.
+
+- **3.3.2 pruebas de intrusión** 
+
+Se realizarán pruebas de intrusión periódicas para identificar vulnerabilidades en el sistema antes d que puedan ser explotadas por atacantes externos o internos. 
+
+4. Politicas de seguridad
+- **3.4.2 Autenticación multifactorial (MFA)** 
+
+  Todos los administradores y empleados del supermercado que gestionan la plataforma tendrán que utilizar MFA. Eso incluye la combinación de una contraseña según el factor de autenticación, como un código enviado a un móvil o una aplicación de autenticación como Google authenticator
+
+  Ejemplo: Un administrador que intenta acceder al tablero de gestión tendrá que introducir su contraseña y verificar un código temporal enviado a su teléfono 
+
+- **Gestión de roles** 
+
+  Se definirán diferentes roles con permisos específicos:
+
+  **Usuario**: Puede ver y publicar comentarios sobre productos, añadir productos a listas de preferidos y editar su perfil.
+
+  **Moderador**: Puede revisar comentarios inapropiados y bloquear usuarios que incumplan las normas.
+
+  **Administrador**: Tiene acceso completo al sistema, incluyendo la gestión de contenido y usuarios. 
+
+- **Registro y auditoria de acceso** 
+
+  Se registrarán todas las acciones realizadas para cada usuario, incluyendo acciones de administrador. Así ayudara a identificar cualquier actividad sospecha o no autorizada.
+
+5. Políticas<a name="_page12_x69.00_y73.00"></a> de protección de datos 
+
+   Análisis de datos sensible: 
+
+   Se clasificará la información según su nivel de sensibilidad. Por ejemplo, datos personales de los usuarios (nombre, correo electrónico) se consideran de alto nivel y requerirán medidas adicionales de protección.
+
+   Tiempo de retención: 
+
+   Los datos de los usuarios que dejen de utilizar la plataforma se mantendrán solo por el tiempo necesario para cumplir con las normativas legales y se destruirán de manera segura después de este periodo.
+
+   **3.5.1 Monitorización continua** Análisis en tiempo real: 
+
+   Se utilizará una herramienta de monitorización de \*logs para identificar patrones de comportamiento anómalos, como accesos masivos desde una sola dirección IP o intentos constantes de inicio de sesión fallados.
+
+   Alertas automáticas: 
+
+   El sistema generará alertas automáticas en caso de actividades sospechosas, como cambios masivos a la base de datos o el intento de acceso desde una ubicación geográfica no reconocida.
+
+6. Seguridad<a name="_page12_x69.00_y526.00"></a> en dispositivos móviles 
+
+   Como que muchos usuarios accederán a la red social desde dispositivos móviles, tenemos que implementar reglas específicas para proteger estas conexiones: 
+
+- **Autenticación biométrica:**  
+
+  ` `Opción de iniciar sesión como imprenta dactilar o reconocimiento facial.
+
+- **Protección contra aplicaciones maliciosas:**
+
+  Verificación de que la aplicación oficial se descargue solo des de fuentes seguras como Google play y Apple store 
+
+- **Control de sesiones activas:**
+
+  Los usuarios pueden ver y gestionar dispositivos conectados por su cuenta
+
+- **Cifrado de datos en móviles** 
+
+  Todos los datos almacenados localmente a la app se cifran para evitar el robo en caso de pérdida o robo del dispositivo
+
+7. Resultado<a name="_page13_x69.00_y249.00"></a> esperado
+
+   Con este diseño de seguridad, se espera obtener: Confidencialidad: 
+
+   Todos los datos personales y de uso de los usuarios estarán protegidas mediante medidas de cifrado y controles de acceso. Los atacantes no podrán acceder a información sensible.
+
+   Integridad: 
+
+   Los datos almacenados al sistema no podrán ser modificadas de manera no autorizada gracias a las medidas de control y registro implementadas.
+
+   Disponibilidad: 
+
+   El sistema se mantendrá operativo incluso en caso de ataques o errores técnicos, gracias a las copias de seguridad y la redundancia del \*CPD.
+
+   ` `Ejemplo práctico: 
+
+   Un usuario puede acceder en la red social sabiendo que sus datos están protegidos. En caso de un ataque, los sistemas de seguridad bloquean la acción inmediatamente y los administradores pueden actuar según el protocolo establecido. 
+
+4. **Diseño<a name="_page13_x69.00_y692.00"></a> de el plan de recuperación frente a desastres.** 
+- **Propósito del plan:** 
+
+  Garantizar la continuidad de la red social de productos de supermercado ante fallos críticos o desastres, minimizando la pérdida de datos y tiempo de inactividad. 
+
+- **Objetivos Específicos:** 
+- Definir procedimientos para realizar copias de seguridad periódicas.
+- Establecer estrategias para la restauración rápida de sistemas y datos.
+- Asegurar la integridad y disponibilidad de los datos almacenados.
+1. **Estrategia<a name="_page14_x69.00_y211.00"></a> de Copias de Seguridad** 
+- **Copias completas:** 
+- Se realizan semanalmente para guardar una imagen completa de todos los datos. 
+- Ventaja: Todo está en un solo punto de restauración.
+- Desventaja: Toma más tiempo y espacio.
+- **Copias incrementales:** 
+- Se realizan diariamente para guardar solo los datos nuevos o modificados desde la última copia. 
+- Ventaja: Reduce el tiempo y espacio requerido.
+- Desventaja: Depende de la última copia completa.
+2. **Almacenamiento<a name="_page14_x69.00_y435.00"></a> de las Copias** 
+- **Almacenamiento local:** 
+- RAID 5 para tolerancia a fallos y redundancia. 
+- Acceso rápido a copias en servidores internos.
+- **Almacenamiento en la nube:** 
+- Contratación de servicios AWS S3. 
+- Alta disponibilidad y recuperación en caso de pérdida de datos local.
+3. **Restauración<a name="_page14_x69.00_y640.00"></a> de Sistemas y Datos** 
+- **Procedimientos de restauración:**
+1. Evaluar la causa del fallo. 
+1. Seleccionar la copia de seguridad adecuada. 
+1. Restaurar datos. 
+- **Pasos detallados de Restauración:**
+- Desplegar la infraestructura básica desde la copia completa más reciente.
+- Aplicar las copias incrementales o completas.
+- Verificar la integridad de los datos restaurados.
+- Reiniciar los servicios afectados.
+4. **Mecanismos<a name="_page15_x69.00_y152.00"></a> de Redundancia** 
+- **Sistemas de alimentación:**
+- SAIs 
+- Garantizar la disponibilidad de energía en caso de cortes eléctricos.
+- Instalación de generadores en el CPD.
+- **Redundancia de Datos:** 
+- RAID de nivel 5 debido a que tenemos 4 discos. 
+- Configurar replicación a través de la nube para proteger la información.
+- **Backup distribuido:** 
+- Tendremos otra copia en otro lugar distinto a donde está situado nuestro CPD (estará en un centro de datos ubicado en Benirrera, Valencia).
+5. **Documentación<a name="_page15_x69.00_y377.00"></a> y Pruebas Regulares** 
+- **Documentación de procedimientos:**
+- Guías claras para el equipo técnico sobre la configuración y el monitoreo de las copias de seguridad y el procedimiento para restaurar datos y sistemas.
+- **Pruebas regulares:** 
+- Realizaremos pruebas cada 3 meses de desastres para:
+- Verificar que las copias de seguridad se restauren correctamente.
+- Medir los tiempos de recuperación.
+- Identificar puntos de mejora en los procedimientos.
+5. Manual<a name="_page16_x69.00_y73.00"></a> de Usuario del CPD 
+
+El manual de los usuarios servirá para poder orientar a todos los Usuarios que puedan entrar al Centro de Procesamiento de Datos (CPD) sobre el uso correcto de los sistemas, las normas de acceso y uso y las buenas prácticas para poder asegurar la continuidad y seguridad del servicio del CPD.  
+
+1. Acceso<a name="_page16_x69.00_y209.00"></a> al Sistema  
+- **Al Iniciar sesión** 
+- Conectar los ordenadores de trabajo a la VLAN correspondiente.
+- Ingresar al sistema con las credenciales asignadas necesarias. 
+- **Reglas de uso**  
+- Mantener la confidencialidad de las credenciales.
+- No compartir accesos con terceros
+- Informar de cualquier actividad sospechosa al administrador del sistema 
+2. Uso<a name="_page16_x69.00_y412.00"></a> de Recursos del CPD  
+- **Acceso a servidores** 
+- Utilizar el protocolo RDP o SHH para la gestión remota de los servidores.
+- Limitar las conexiones a lo que sea necesario para que puedan trabajar.
+- **Almacenamiento en NAS**  
+- Acceder a los recursos compartidos mediante autenticación si nos no se pude acceder. 
+- Respetar las políticas de almacenamiento y organización de archivos.  
+- **Copias de Seguridad**  
+- No modificar ni eliminar archivos destinados a backups 
+- Consultar al administrador si se requiere restaurar algún dato de alguna copia.  
+3. Resolución<a name="_page16_x69.00_y663.00"></a> de Problemas 
+- **Problemas de inicio de sesión** 
+- Verificar que las credenciales son las correctas
+- Confirmar que estas en la VLAN adecuada para tener acceso a los servidores e internet.  
+- Contactar con los administradores (soporte técnico) por si el problema sigue y los usuarios no pueden solucionar
+- **Pérdida de conexión**  
+- Revisar el estado de la conexión física y la configuración de red. 
+- Notificar al administrador y servicio técnico si hay caídas del servicio. 
+- Revisar que las conexiones dentro de los servidores esta todo correcto y no hay ningún cable de red desconectado. 
+6. Guía<a name="_page17_x69.00_y285.00"></a> de Administración del CPD
+
+Esta guía está destinada a los administradores responsables de la gestión, mantenimiento y seguridad del CPD. Contiene procedimientos clave alineados con la arquitectura definida en el proyecto, asegurando el funcionamiento óptimo, seguro y eficiente del sistema. 
+
+1. Gestión<a name="_page17_x69.00_y414.00"></a> de Servidores
+- **Controlador Principal** 
+- Revisar periódicamente el estado de Active Directory, DNS y DHCP, asegurando su correcta integración con la segmentación de VLANs establecida en la infraestructura.
+- Aplicar parches y actualizaciones de seguridad mensualmente, siguiendo las políticas de protección del CPD.
+- Realizar auditorías de cuentas de usuario cada tres meses para verificar accesos y permisos según el modelo de seguridad definido
+- **Servidor de Aplicaciones y Bases de Datos**
+- Monitorizar el rendimiento de SQL Server para garantizar el correcto funcionamiento de la aplicación.
+- Optimizar consultas y mantener índices actualizados para mejorar tiempos de respuesta.
+- **Servidor de Respaldo** 
+- Verificar la integridad de las copias de seguridad almacenadas.
+- Configurar sincronización automática con el NAS y AWS S3 para asegurar la redundancia geográfica. 
+- Realizar pruebas de restauración trimestrales para validar la efectividad del plan de recuperación ante desastres.
+- Situado en diferente lugar 
+2. Gestión<a name="_page18_x69.00_y170.00"></a> de Red
+- **VLAN’s** 
+- Revisar configuraciones de VLANs (10, 20 y 30) para mantener la segmentación definida en la documentación técnica.
+- Asegurar el aislamiento de tráfico entre VLANs conforme a las políticas de seguridad establecidas.
+- **Switches y Router** 
+- Actualizar el firmware de switches y router para garantizar estabilidad y seguridad. 
+- Monitorizar el tráfico de red para identificar posibles congestiones o amenazas. 
+- **Firewall** 
+- Mantener las reglas de firewall actualizadas conforme a las estrategias de protección contra ciberataques.
+- Configurar alertas automáticas para actividades sospechosas mediante herramientas de detección y prevención de intrusos.
+3. Seguridad<a name="_page18_x69.00_y580.00"></a> del CPD
+- **Control de Acceso Físico** 
+- Solo personal autorizado puede acceder al CPD.
+- Implementación de controles biométricos o tarjetas de acceso para restringir la entrada. 
+- Registro de accesos con auditorías periódicas para detectar anomalías.
+- **Protección Perimetral** 
+- Revisar configuraciones de cortafuegos para proteger el acceso al CPD.
+- Realizar pruebas de penetración semestrales para detectar posibles vulnerabilidades. 
+- **Seguridad de la Infraestructura** 
+- Monitorizar en tiempo real la temperatura y humedad del CPD con sensores especializados.
+- Implementar sistemas de refrigeración redundantes para evitar sobrecalentamientos.
+- Garantizar que la humedad relativa se mantenga dentro de los rangos recomendados para equipos electrónicos (40%-60%). 
+- Verificar la funcionalidad de los SAI y generadores eléctricos para asegurar el suministro de energía ininterrumpida.
+- **Copias de Seguridad** 
+- Confirmar la ejecución correcta de copias completas e incrementales conforme al plan de respaldo documentado.
+- Almacenar copias redundantes en local y en la nube mediante AWS S3 y NAS 
+4. Procedimientos<a name="_page19_x69.00_y359.00"></a> de Recuperación
+- **Restauración de Servidores** 
+- Identificar la causa del fallo mediante el análisis de registros del sistema.
+- Restaurar la infraestructura básica desde la copia completa almacenada en el NAS. 
+- Aplicar copias incrementales y verificar la integridad de los datos restaurados. 
+- **Plan de Recuperación Ante Desastres**
+- Seguir el procedimiento documentado para la activación del plan de contingencia en caso de fallo crítico.
+- Contactar con el personal clave según el protocolo establecido y escalar incidentes según su nivel de gravedad.
+5. Documentación<a name="_page19_x69.00_y650.00"></a> y Auditorías
+- Mantener registros detallados de todas las actividades del CPD para auditorías y revisiones periódicas. 
+- Realizar auditorías de seguridad y rendimiento cada seis meses para evaluar el cumplimiento de las políticas establecidas.
+- Actualizar la documentación técnica tras cualquier cambio significativo en la infraestructura del CPD. 
+Página 21 de 21  Daniel Dumea, Jordi Escriva, Ivan Catala
+
