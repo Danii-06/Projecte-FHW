@@ -78,7 +78,7 @@ GRUPO 21
 5. [Documentación y Auditorías ________________________________________________ 20 ](#_page19_x69.00_y650.00)
 1. Diseño<a name="_page2_x69.00_y95.00"></a> de la arquitectura del sistema 
 
-![]([Aspose.Words.38787952-61e2-48b2-92b6-4d1d652d9a9e.002.jpeg](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%201.png))
+![]([Aspose.Words.38787952-61e2-48b2-92b6-4d1d652d9a9e.002.jpeg](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%201.png)
 
 GRUPO 24 
 
