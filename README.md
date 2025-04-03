@@ -6,7 +6,7 @@
 - Ivan Catala Prats
   # Índice
 
-## 1. Introducción (#introduccion)  
+## 1. Introducción (#Introducción)  
 ## 2. Objetivos del Proyecto  
 ## 3. Requisitos  
 ### 3.1 Requisitos Funcionales  
