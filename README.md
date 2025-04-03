@@ -902,3 +902,202 @@ Esta guía está destinada a los administradores responsables de la gestión, ma
 - Actualizar la documentación técnica tras cualquier cambio significativo en la infraestructura del CPD. 
 Página 21 de 21  Daniel Dumea, Jordi Escriva, Ivan Catala
 
+GRUPO 24 
+
+1. [Instalación del Servidor ........................................................................................ 3 ](#_page2_x69.00_y73.00)
+1. [Instalación de RAID 5 por Software ....................................................................... 5 ](#_page4_x69.00_y73.00)
+1. [Creación de los usuarios para los trabajadores. ................................................... 11 ](#_page10_x69.00_y73.00)
+4. [Instalación de Aomei Backupper Server y una copia del disco del sistema operativo.  ............................................................................................................................ 15 ](#_page14_x69.00_y73.00)
+4. [Restauración de la copia de seguridad del sistema .............................................. 19 ](#_page18_x69.00_y73.00)
+4. [Ubuntu Server ................................................................................................... 22 ](#_page21_x69.00_y73.00)
+4. [Romper el raid y recuperarlo ............................................................................... 22 ](#_page21_x69.00_y406.00)
+1. **Instalación<a name="_page2_x69.00_y73.00"></a> del Servidor** 
+
+Primero que todo, empezamos escogiendo un ordenador de todos los que habían para empezar con el proceso del servidor. Una vez escogido vimos que tenía un disco duro de 500GB lo que era bastante capacidad, pero decidimos añadir otro disco después de la instalación del sistema para hacer un RAID. 
+
+La instalación que hicimos fue un Windows Server 2022 que la instalamos con un ventoy en el que teníamos la ISO, en la instalación no tuvimos ningún problema y logramos instalar el servidor rápido y sin fallos.
+
+Una vez ya estamos dentro del servidor, activamos el Active Directory que era algo que nos podía ayudar mucho en nuestro proyecto ya que ayuda a almacenar información acerca de los objetos de una red y facilita su búsqueda y uso por parte de los usuarios y administradores. 
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.002.jpeg)
+
+**FIGURA-1:** Captura del Administrador del Servidor.** 
+
+A la hora de añadir un nuevo disco tuvimos muchos problemas con los discos que le añadíamos porque muchos nos daban fallos y perdimos mucho tiempo comprobando discos, los que detectaba el sistema no se podían usar entonces pensamos que podía ser un problema del cable SATA así que lo cambiamos y ya lo podíamos usar. Lo que el nuevo disco que le pusimos tiene una capacidad de 250GB y no es de la misma capacidad al que ya tenemos puesto.
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.003.jpeg)
+
+**FIGURA-2:** Captura de los dos discos en marcha.
+
+2. **Instalación<a name="_page4_x69.00_y73.00"></a> de RAID 5 por Software**  
+
+Después de tener un Windows Server 22 instalado hemos tenido que investigar como poder hacer un raid 5 por software porque hemos tenido algún problema que otro por que la tecnología de Raid 5 necesita mínimo 3 discos para poder crearse. Entonces hicimos particiones en un segundo disco físico que metimos, pero no pedimos crear el raid porque por particiones simple no nos dejaba. Luego de unos días estar investigando y preguntado también a compañeros lo podíamos hacer y lo vamos a explicar a continuación.  
+
+**Paso 1:**  
+
+Crear una partición en el disco 0 que es donde está instalado el sistema Operativo y dejara lo inicializado.  
+
+A continuación, creamos 3 discos duros VHD para poder crear el raid 5.  **Paso 2:**  
+
+Luego de tener los 3 discos VHD creados nos vamos al Administrador del Servidor, en la parte izquierda nos situamos donde pone Servicios de archivos y de almacenamiento. Ahí dentro entra a los Servidores donde vamos a crear los discos virtuales para poder crear el raid 5.  
+
+Donde pone Discos Virtuales nos situamos y en la parte de tareas le decimos nuevo disco virtual y a continuación vemos como creamos el disco virtual. 
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.004.jpeg)
+
+**FIGURA-3:.** Le ponemos nombre al disco virtual 
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.005.jpeg)
+
+**FIGURA-4:.** Seleccionamos la distribución de almacenamiento que va a tener el disco virtual 
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.006.jpeg)
+
+**FIGURA-5:** Le indicamos el tipo de aprovisionamiento que será fijo 
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.007.jpeg)
+
+**FIGURA-6:** Le** especificamos el tamaño del disco duro. 
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.008.jpeg)
+
+**FIGURA-7:** Nos indica que un pequeño resumen de lo que hemos aplicado en cada disco virtual.** 
+
+Luego de repetir esto 3 veces para crear los 3 disco virtuales nos vamos al administrador de discos.  
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.009.jpeg)
+
+**FIGURA-8:** Podemos ver que ya tenemos los 3 discos creados por software virtuales para raid 5.  
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.010.jpeg)
+
+**FIGURA-9:** En el administrador del servidor nos vamos a los grupos de almacenamiento para poder añadir el disco físico que tenemos a los discos virtuales que hemos creado.**  
+
+3. **Creación<a name="_page10_x69.00_y73.00"></a> de los usuarios para los trabajadores.**
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.011.jpeg)
+
+**FIGURA-10:** Para crear usuarios en Windows Server 2022, hemos seguido estos pasos:
+
+1. **Abrir la Administración de Equipos** 
+1. Accedemos al menú Inicio y escribimos "Administración de equipos".
+1. Dentro de la consola, navegamos a **Herramientas del sistema > Usuarios y grupos locales > Usuarios**. 
+2. **Crear un nuevo usuario** 
+1. Hacemos clic derecho en la carpeta "Usuarios" y seleccionamos **"Usuario nuevo..."**. 
+1. Se abre la ventana para agregar un nuevo usuario.
+3. **Configurar los datos del usuario** 
+
+a.  En la ventana emergente, ingresamos:
+
+1. **Nombre de usuario**: "El nombre que deseamos". 
+1. **Descripción**: "la descripción que deseamos por ejemplo administrador ". 
+1. **Contraseña**: Se establece y se confirma en los campos correspondientes. 
+1. Se marca la opción **"El usuario debe cambiar la contraseña en el siguiente inicio de sesión"** para obligar al usuario a cambiar su clave en su primer acceso. 
+4. **Finalizar la creación** 
+
+a.  Hacemos clic en el botón **"Crear"**, y el usuario queda registrado en el 
+
+sistema. 
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.012.png)
+
+**FIGURA-11:** Creamos el usuario Ivan.** 
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.013.png)
+
+**FIGURA-12:** Creamos el usuario Jordi.** 
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.014.png)
+
+**FIGURA-13:** Creamos el usuario Dani.** 
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.015.jpeg)
+
+**FIGURA-14:** En usuarios y Grupos locales en la carpeta de usuarios aparecerán todos los usuarios que tiene el equipo. 
+
+4. **Instalación<a name="_page14_x69.00_y73.00"></a> de Aomei Backupper Server y una copia del disco del sistema operativo.**  
+
+   Instalaremos AOMEI Backupper para hacer copias de seguridad por si tenemos algún problema. 
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.016.jpeg)
+
+**FIGURA-15** Primero instalaremos el AOMEI BACKUPER para hacer copias de seguridad
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.017.jpeg)
+
+**FIGURA-16** Le daremos a nueva copia de seguridad para iniciar el proceso
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.018.jpeg)
+
+**FIGURA-17** Le daremos a copia de seguridad del disco  
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.019.jpeg)
+
+**FIGURA-18** Elegiremos el disco duro que queremos hacer la copia de seguridad** 
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.020.jpeg)
+
+**FIGURA-19** Luego diremos en que disco duro queremos que se haga
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.021.jpeg)
+
+**FIGURA-20** Aquí veremos el historial de las copias de seguridad que hemos hecho. 
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.022.png)
+
+**FIGURA-21** Y luego la tendremos en el equipo exportado para poder utilizar la copia cuando lo necesitemos.
+
+5. **Restauración<a name="_page18_x69.00_y73.00"></a> de la copia de seguridad del sistema** 
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.023.jpeg)
+
+**FIGURA-22** Seleccionamos restaurar y seleccionamos los archivos que deseemos 
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.024.jpeg)
+
+**FIGURA-23** Elegimos la copia de seguridad que deseemos restaurar
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.025.jpeg)
+
+**FIGURA-24** Le damos a restaurar para recuperar la copia anterior.
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.026.jpeg)
+
+**FIGURA-25** Vemos el resumen de la restauración que vamos a realizar. 
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.027.png)
+
+**FIGURA-26** Luego lo reiniciaremos con AOMEI Backupper y luego cuando reinicies tendrás los pasos para recuperar la copia de seguridad.** 
+
+6. **Ubuntu<a name="_page21_x69.00_y73.00"></a> Server**
+- Nombre del servidor Ubuntu --> proyecto 
+- Contra --> grupo4 
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.028.jpeg)
+
+**FIGURA-27**  Hemos instalado una máquina virtual de Ubuntu Server y le hemos dado nombre y contraseña luego lo conectaremos a nuestro servidor para que puedan comunicarse.  
+
+7. **Romper<a name="_page21_x69.00_y406.00"></a> el raid y recuperarlo** 
+
+Lo primero que hacemos es hacer como que nos falla un disco del raid 5 para poder recuperarlo es decir vamos a simular como que en la empresa el raid 5 está funcionando correctamente y de repente un disco del raid 5 falla entonces hay que añadir uno para poder recuperarlo. Vamos a hacer un paso a paso de como lo hemos realizado.  
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.029.png)
+
+**FIGURA 28 –** Vemos como el disco que antes estaba en el raid ha fallado.
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.030.png)**FIGURA 29 –** Hemos añadido un VHD para poder recuperar el raid porque hay un disco que falla.  
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.031.png)
+
+**FIGURA 30 –** Hemos añadido el disco VHD nuevo para poder volver a crear el raid por que el disco 4 es el que daba fallo entonces quitamos el 4 y añadimos el disco 7 para poder volver a hacer el raid 5.  
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.032.png)
+
+**FIGURA 31 –** En esta imagen podemos ver la administración de discos virtuales con varios discos que están configurados en un grupo RAID 5, todos con aprovisamiento fijo y la distribución simple.  
+
+![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.033.jpeg)
+
+**FIGURA 31 –** Aquí en esta imagen podemos ver que el Disco 2/3/7 están montados en RAID 5. El Ventoy es un USB que pusimos para poder guardar las capturas para luego para poder hacer la documentación del proyecto.
+Pagina 24 de 24  Daniel Dumea, Ivan Catalá, Jordi Escriva
+
+
