@@ -97,7 +97,7 @@
 
 
    
-1. **Introducción<a name="_page2_x69.00_y148.00"></a>** 
+## 1. Introducción
 
 **CPD PARA UNA RED SOCIAL PARA PRODUCTOS DE SUPER MERCADO**  
 
