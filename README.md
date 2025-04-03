@@ -4,91 +4,92 @@
 - Daniel Pablo Dumea
 - Jordi Escriva Montaner
 - Ivan Catala Prats
-  
-  1. [Introducción _________________________________________________________________ 3 ](#_page2_x69.00_y148.00)
-1. [Objetivos del Proyecto _______________________________________________________ 3 ](#_page2_x69.00_y348.00)
-1. [Requisitos Funcionales ______________________________________________________ 4 ](#_page3_x69.00_y542.00)
+  # Índice
 
-[1.4 Requisitos No Funcionales ___________________________________________________ 5 ](#_page4_x69.00_y365.00)
+## 1. Introducción  
+## 2. Objetivos del Proyecto  
+## 3. Requisitos  
+### 3.1 Requisitos Funcionales  
+### 3.2 Requisitos No Funcionales  
 
-2. [Análisis de requisitos _________________________________________________________ 6 ](#_page5_x69.00_y171.00)
-1. [Requisitos de Hardware ______________________________________________________ 6 ](#_page5_x69.00_y339.00)
-1. [Requisitos de Software ______________________________________________________ 6 ](#_page5_x69.00_y666.00)
-1. [Requisitos de Red ___________________________________________________________](#_page6_x69.00_y242.00) [7 ](#_page6_x69.00_y242.00)
-1. [Capacidades Técnicas Necesarias ____________________________________________ 7 ](#_page6_x69.00_y575.00)
-1. [Ejemplo de un posible escenario para el uso de la red social ____________________ 8 ](#_page7_x69.00_y115.00)
+## 4. Análisis de Requisitos  
+### 4.1 Requisitos de Hardware  
+### 4.2 Requisitos de Software  
+### 4.3 Requisitos de Red  
+### 4.4 Capacidades Técnicas Necesarias  
+### 4.5 Ejemplo de Escenario de Uso  
 
-[3 Cronograma del proyecto ______________________________________________________ 8 ](#_page7_x69.00_y436.00)[4. Asignación de roles y responsabilidades ________________________________________ 9 ](#_page8_x69.00_y142.00)
+## 5. Cronograma del Proyecto  
 
-1. [Los Roles del equipo _________________________________________________________ 9 ](#_page8_x69.00_y630.00)
-1. [Dinámica entre roles _______________________________________________________ 10 ](#_page9_x69.00_y665.00)
-1. [El Trabajo se basa en 7 actividades: __________________________________________ 11 ](#_page10_x69.00_y463.00)[5 identificación de recursos  necesarios. _________________________________________ 12 ](#_page11_x69.00_y601.00)
-1. [Recursos Humanos ________________________________________________________ 13 ](#_page12_x69.00_y73.00)
-1. [Costes de Hardware ________________________________________________________ 13 ](#_page12_x69.00_y547.00)
-1. [Costes de Software _________________________________________________________ 14 ](#_page13_x69.00_y101.00)
-1. [Costes de Red _____________________________________________________________ 14 ](#_page13_x69.00_y575.00)
-1. [Costes de Infraestructura y Mantenimiento ___________________________________ 15 ](#_page14_x69.00_y333.00)
-1. [Estimación Financiera ______________________________________________________ 15 ](#_page14_x69.00_y711.00)
+## 6. Asignación de Roles y Responsabilidades  
+### 6.1 Roles del Equipo  
+### 6.2 Dinámica entre Roles  
+### 6.3 Actividades del Proyecto  
 
-[6. Evaluación de riesgos y planificación de contingencias _________________________ 16 ](#_page15_x69.00_y167.00)
+## 7. Identificación de Recursos Necesarios  
+### 7.1 Recursos Humanos  
+### 7.2 Costes de Hardware  
+### 7.3 Costes de Software  
+### 7.4 Costes de Red  
+### 7.5 Costes de Infraestructura y Mantenimiento  
+### 7.6 Estimación Financiera  
 
-1. [Identificación de riesgos ____________________________________________________ 16 ](#_page15_x69.00_y273.00)
-1. [Evaluación de los riesgos ___________________________________________________ 16 ](#_page15_x69.00_y548.00)
-1. [Plan de contingencias ______________________________________________________ 17 ](#_page16_x69.00_y73.00)
-1. [Protocolos de actuación ____________________________________________________ 17 ](#_page16_x69.00_y538.00)
+## 8. Evaluación de Riesgos y Planificación de Contingencias  
+### 8.1 Identificación de Riesgos  
+### 8.2 Evaluación de los Riesgos  
+### 8.3 Plan de Contingencias  
+### 8.4 Protocolos de Actuación  
 
-[1. Diseño de la arquitectura del  sistema __________________________________________ 3 ](#_page2_x69.00_y95.00)
+## 9. Diseño de la Arquitectura del Sistema  
+### 9.1 Segmentación por VLANs  
+### 9.2 Conectividad y Flujo de Datos  
+### 9.3 Seguridad y Respaldo  
+### 9.4 Servidores  
+### 9.5 Almacenamiento  
+### 9.6 Infraestructura Adicional  
+### 9.7 Mecanismos de Redundancia  
+### 9.8 Herramientas de Virtualización  
+### 9.9 Contratación de Servicios AWS S3  
+### 9.10 Dispositivos Utilizados  
 
-1. [Segmentación por VLAN’s ____________________________________________________ 3 ](#_page2_x69.00_y693.00)
+## 10. Diseño de la Seguridad del Sistema  
+### 10.1 Medidas de Protección  
+### 10.2 Protección contra Amenazas Internas  
+### 10.3 Respuesta ante Ciberataques  
+### 10.4 Políticas de Seguridad  
+### 10.5 Políticas de Protección de Datos  
+### 10.6 Seguridad en Dispositivos Móviles  
 
-GRUPO 21 
+## 11. Diseño del Plan de Recuperación ante Desastres  
+### 11.1 Estrategia de Copias de Seguridad  
+### 11.2 Almacenamiento de Copias  
+### 11.3 Restauración de Sistemas y Datos  
+### 11.4 Mecanismos de Redundancia  
+### 11.5 Documentación y Pruebas Regulares  
 
-2. [Conectividad y Flujo de Datos ________________________________________________ 4 ](#_page3_x69.00_y304.00)
-2. [Seguridad y Respaldo ________________________________________________________ 4 ](#_page3_x69.00_y436.00)
-1. [Servidores __________________________________________________________________ 6 ](#_page5_x69.00_y73.00)
-1. [Almacenamiento ____________________________________________________________](#_page6_x69.00_y73.00) [7 ](#_page6_x69.00_y73.00)
-1. [Infraestructura Adicional _____________________________________________________ 7 ](#_page6_x69.00_y339.00)
-1. [Mecanismos de Redundancia ________________________________________________ 8 ](#_page7_x69.00_y440.00)
-1. [Herramientas de Virtualización _______________________________________________ 9 ](#_page8_x69.00_y73.00)
-1. [Contratación de Servicios AWS S3 ____________________________________________ 9 ](#_page8_x69.00_y445.00)
-1. [Dispositivos que vamos a tener. _____________________________________________ 10 ](#_page9_x69.00_y73.00)
-3. [Diseño de la seguridad del sistema ___________________________________________ 10 ](#_page9_x69.00_y312.00)
-   1. [Medidas de Protección _____________________________________________________ 10 ](#_page9_x69.00_y353.00)
-   1. [Protección contra amenazas internas ________________________________________ 11 ](#_page10_x69.00_y73.00)
-   1. [Respuesta ante ciberataques _______________________________________________ 11 ](#_page10_x69.00_y295.00)
-   1. politicas de seguridad \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 10 
-   1. [Políticas de protección de datos _____________________________________________ 13 ](#_page12_x69.00_y73.00)
-   1. [Seguridad en dispositivos móviles ___________________________________________ 13 ](#_page12_x69.00_y526.00)
-   1. [Resultado esperado ________________________________________________________ 14 ](#_page13_x69.00_y249.00)
-3. [Diseño de el plan de recuperación frente a desastres. __________________________ 14 ](#_page13_x69.00_y692.00)
-   1. [Estrategia de Copias de Seguridad ___________________________________________ 15 ](#_page14_x69.00_y211.00)
-   1. [Almacenamiento de las Copias ______________________________________________ 15 ](#_page14_x69.00_y435.00)
-   1. [Restauración de Sistemas y Datos ___________________________________________ 15 ](#_page14_x69.00_y640.00)
-   1. [Mecanismos de Redundancia _______________________________________________ 16 ](#_page15_x69.00_y152.00)
-   1. [Documentación y Pruebas Regulares ________________________________________ 16 ](#_page15_x69.00_y377.00)
-3. [Manual de Usuario del CPD __________________________________________________ 17 ](#_page16_x69.00_y73.00)
-   1. [Acceso al Sistema _________________________________________________________ 17 ](#_page16_x69.00_y209.00)
-   1. [Uso de Recursos del CPD __________________________________________________ 17 ](#_page16_x69.00_y412.00)
-   1. [Resolución de Problemas __________________________________________________ 17 ](#_page16_x69.00_y663.00)
-3. [Guía de Administración del CPD ______________________________________________ 18 ](#_page17_x69.00_y285.00)
-1. [Gestión de Servidores ______________________________________________________ 18 ](#_page17_x69.00_y414.00)
-1. [Gestión de Red _____________________________________________________________ 19 ](#_page18_x69.00_y170.00)
-1. [Seguridad del CPD _________________________________________________________ 19 ](#_page18_x69.00_y580.00)
-1. [Procedimientos de Recuperación ____________________________________________ 20 ](#_page19_x69.00_y359.00)
-5. [Documentación y Auditorías ________________________________________________ 20 ](#_page19_x69.00_y650.00)
-1. Diseño<a name="_page2_x69.00_y95.00"></a> de la arquitectura del sistema 
+## 12. Manual del Usuario del CPD  
+### 12.1 Acceso al Sistema  
+### 12.2 Uso de Recursos del CPD  
+### 12.3 Resolución de Problemas  
+
+## 13. Guía de Administración del CPD  
+### 13.1 Gestión de Servidores  
+### 13.2 Gestión de Red  
+### 13.3 Seguridad del CPD  
+### 13.4 Procedimientos de Recuperación  
+### 13.5 Documentación y Auditorías  
+
+## 14. Instalación del Servidor  
+### 14.1 Instalación de RAID 5 por Software  
+### 14.2 Creación de Usuarios para Trabajadores  
+### 14.3 Instalación de Aomei Backupper Server y Copia del Disco del Sistema  
+### 14.4 Restauración de la Copia de Seguridad del Sistema  
+### 14.5 Ubuntu Server  
+### 14.6 Romper el RAID y Recuperarlo  
+
+ 
 
 ![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%201.png)
-
-GRUPO 24 
-
-1. [Instalación del Servidor ........................................................................................ 3 ](#_page2_x69.00_y73.00)
-1. [Instalación de RAID 5 por Software ....................................................................... 5 ](#_page4_x69.00_y73.00)
-1. [Creación de los usuarios para los trabajadores. ................................................... 11 ](#_page10_x69.00_y73.00)
-4. [Instalación de Aomei Backupper Server y una copia del disco del sistema operativo.  ............................................................................................................................ 15 ](#_page14_x69.00_y73.00)
-4. [Restauración de la copia de seguridad del sistema .............................................. 19 ](#_page18_x69.00_y73.00)
-4. [Ubuntu Server ................................................................................................... 22 ](#_page21_x69.00_y73.00)
-4. [Romper el raid y recuperarlo ............................................................................... 22 ](#_page21_x69.00_y406.00)
 
 
 
