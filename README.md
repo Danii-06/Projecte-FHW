@@ -9,7 +9,7 @@
 # Índice
 
 
--[1. Introducción](#Introducción)  
+-[1. Introducción](#1-Introducción)  
 ## 2. Objetivos del Proyecto  
 ## 3. Requisitos  
 ### 3.1 Requisitos Funcionales  
@@ -94,7 +94,7 @@
 
 
    
-## Introducción
+## 1. Introducción
 
 **CPD PARA UNA RED SOCIAL PARA PRODUCTOS DE SUPER MERCADO**  
 
