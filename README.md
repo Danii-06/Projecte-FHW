@@ -6,6 +6,12 @@
 - Ivan Catala Prats
   # Índice
 
+# Índice
+- [1. Introducción PRUEBA](#mi-sección)
+
+
+
+
 ## 1. Introducción (#Introducción)  
 ## 2. Objetivos del Proyecto  
 ## 3. Requisitos  
@@ -94,6 +100,9 @@
 1. **Introducción<a name="_page2_x69.00_y148.00"></a>** 
 
 **CPD PARA UNA RED SOCIAL PARA PRODUCTOS DE SUPER MERCADO**  
+
+## Mi Sección
+Aquí está el contenido de mi sección.
 
 Este trabajo consiste en un proyecto de gestión de un CPD virtual que estará dedicado exclusivamente a alojar la red social para la comparación de precios de supermercados, proporcionado los recursos informáticos necesarios para garantizar su escalabilidad, seguridad y disponibilidad.  
 
