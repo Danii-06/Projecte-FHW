@@ -957,7 +957,7 @@ Donde pone Discos Virtuales nos situamos y en la parte de tareas le decimos nuev
 
 **FIGURA-6:** Le** especificamos el tamaño del disco duro. 
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.008.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%209.png)
 
 **FIGURA-7:** Nos indica que un pequeño resumen de lo que hemos aplicado en cada disco virtual.** 
 
