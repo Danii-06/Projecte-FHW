@@ -950,7 +950,7 @@ Luego de tener los 3 discos VHD creados nos vamos al Administrador del Servidor,
 
 Donde pone Discos Virtuales nos situamos y en la parte de tareas le decimos nuevo disco virtual y a continuación vemos como creamos el disco virtual. 
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.004.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%204.png)
 
 **FIGURA-3:.** Le ponemos nombre al disco virtual 
 
