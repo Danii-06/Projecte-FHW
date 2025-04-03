@@ -492,7 +492,9 @@ Para el tema de monitorización vamos a utilizar Prometheus ya que es más escal
 1. Verificación y Restauración 
 1. Informe y Prevención 
 **Página 17 de 17  Daniel Dumea, Ivan Catalá, Jordi Escriva**
+
 ![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%202.png)
+
 1. Segmentación<a name="_page2_x69.00_y693.00"></a> por VLAN’s 
 - **VLAN 10 – Usuarios internos** 
 - Contiene las estaciones de trabajo con direcciones en el rango 192.168.10.X 
