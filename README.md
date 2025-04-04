@@ -1035,45 +1035,45 @@ sistema.
 
 **FIGURA-16** Le daremos a nueva copia de seguridad para iniciar el proceso
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.018.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2019.png)
 
 **FIGURA-17** Le daremos a copia de seguridad del disco  
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.019.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2020.png)
 
 **FIGURA-18** Elegiremos el disco duro que queremos hacer la copia de seguridad** 
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.020.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2021.png)
 
 **FIGURA-19** Luego diremos en que disco duro queremos que se haga
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.021.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2022.png)
 
 **FIGURA-20** Aquí veremos el historial de las copias de seguridad que hemos hecho. 
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.022.png)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2023.png)
 
 **FIGURA-21** Y luego la tendremos en el equipo exportado para poder utilizar la copia cuando lo necesitemos.
 
 5. **Restauración<a name="_page18_x69.00_y73.00"></a> de la copia de seguridad del sistema** 
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.023.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2024.png)
 
 **FIGURA-22** Seleccionamos restaurar y seleccionamos los archivos que deseemos 
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.024.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2025.png)
 
 **FIGURA-23** Elegimos la copia de seguridad que deseemos restaurar
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.025.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2026.png)
 
 **FIGURA-24** Le damos a restaurar para recuperar la copia anterior.
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.026.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2027.png)
 
 **FIGURA-25** Vemos el resumen de la restauración que vamos a realizar. 
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.027.png)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2028.png)
 
 **FIGURA-26** Luego lo reiniciaremos con AOMEI Backupper y luego cuando reinicies tendrás los pasos para recuperar la copia de seguridad.** 
 
@@ -1081,7 +1081,7 @@ sistema.
 - Nombre del servidor Ubuntu --> proyecto 
 - Contra --> grupo4 
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.028.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2029.png)
 
 **FIGURA-27**  Hemos instalado una máquina virtual de Ubuntu Server y le hemos dado nombre y contraseña luego lo conectaremos a nuestro servidor para que puedan comunicarse.  
 
@@ -1089,21 +1089,23 @@ sistema.
 
 Lo primero que hacemos es hacer como que nos falla un disco del raid 5 para poder recuperarlo es decir vamos a simular como que en la empresa el raid 5 está funcionando correctamente y de repente un disco del raid 5 falla entonces hay que añadir uno para poder recuperarlo. Vamos a hacer un paso a paso de como lo hemos realizado.  
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.029.png)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2030.png)
 
 **FIGURA 28 –** Vemos como el disco que antes estaba en el raid ha fallado.
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.030.png)**FIGURA 29 –** Hemos añadido un VHD para poder recuperar el raid porque hay un disco que falla.  
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2031.png)
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.031.png)
+**FIGURA 29 –** Hemos añadido un VHD para poder recuperar el raid porque hay un disco que falla.  
+
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2032.png)
 
 **FIGURA 30 –** Hemos añadido el disco VHD nuevo para poder volver a crear el raid por que el disco 4 es el que daba fallo entonces quitamos el 4 y añadimos el disco 7 para poder volver a hacer el raid 5.  
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.032.png)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2033.png)
 
 **FIGURA 31 –** En esta imagen podemos ver la administración de discos virtuales con varios discos que están configurados en un grupo RAID 5, todos con aprovisamiento fijo y la distribución simple.  
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.033.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2034.png)
 
 **FIGURA 31 –** Aquí en esta imagen podemos ver que el Disco 2/3/7 están montados en RAID 5. El Ventoy es un USB que pusimos para poder guardar las capturas para luego para poder hacer la documentación del proyecto.
 Pagina 24 de 24  Daniel Dumea, Ivan Catalá, Jordi Escriva
