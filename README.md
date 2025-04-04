@@ -1011,15 +1011,15 @@ sistema.
 
 **FIGURA-11:** Creamos el usuario Ivan.** 
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.013.png)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2014.png)
 
 **FIGURA-12:** Creamos el usuario Jordi.** 
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.014.png)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2015.png)
 
 **FIGURA-13:** Creamos el usuario Dani.** 
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.015.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2016.png)
 
 **FIGURA-14:** En usuarios y Grupos locales en la carpeta de usuarios aparecerán todos los usuarios que tiene el equipo. 
 
@@ -1027,11 +1027,11 @@ sistema.
 
    Instalaremos AOMEI Backupper para hacer copias de seguridad por si tenemos algún problema. 
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.016.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2017.png)
 
 **FIGURA-15** Primero instalaremos el AOMEI BACKUPER para hacer copias de seguridad
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.017.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2018.png)
 
 **FIGURA-16** Le daremos a nueva copia de seguridad para iniciar el proceso
 
