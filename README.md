@@ -983,7 +983,7 @@ Luego de repetir esto 3 veces para crear los 3 disco virtuales nos vamos al admi
 
 3. **Creación<a name="_page10_x69.00_y73.00"></a> de los usuarios para los trabajadores.**
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.011.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2012.png)
 
 **FIGURA-10:** Para crear usuarios en Windows Server 2022, hemos seguido estos pasos:
 
@@ -1007,7 +1007,7 @@ a.  Hacemos clic en el botón **"Crear"**, y el usuario queda registrado en el
 
 sistema. 
 
-![](Aspose.Words.0a348393-76d0-498f-9eed-8c1616bf2724.012.png)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2013.png)
 
 **FIGURA-11:** Creamos el usuario Ivan.** 
 
