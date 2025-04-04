@@ -244,6 +244,8 @@ Nuestro CPD no requerirá una gran cantidad de hardware ni de última generació
 |Ivan** |7\.Revisión y aprobación del plan de proyecto |09/01/2025 |||
 <a name="_page8_x69.00_y142.00"></a>**4. Asignación de roles y responsabilidades**
 
+# Asignación de roles y responsabilidades
+
 **Líder:** 
 
 En nuestro grupo hemos llegado a la conclusión de que Dani será el líder y se encarga de organizar las tareas del grupo y será el portavoz. En la plataforma trello se pondrá de administrador y desde ahí organizará las tareas, las horas, designará a cada cual su tarea y supervisará cada tarea al ser concluida.
