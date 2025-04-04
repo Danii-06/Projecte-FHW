@@ -492,9 +492,8 @@ Para el tema de monitorización vamos a utilizar Prometheus ya que es más escal
 1. Diagnóstico y evaluación 
 1. Respuesta y Solución 
 1. Verificación y Restauración 
-1. Informe y Prevención 
-**Página 17 de 17  Daniel Dumea, Ivan Catalá, Jordi Escriva**
-   
+1. Informe y Prevención
+2.    
 # Diseño de la arquitectura del sistema 
 ![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%202.png)
 
