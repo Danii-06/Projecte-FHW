@@ -37,26 +37,24 @@
 -[6.3 Plan de Contingencias](#63-plan-de-contingencias)  
 -[6.4 Protocolos de Actuación](#64-protocolos-de-actuación)    
 -[7. Diseño de la Arquitectura del Sistema](#7-diseño-de-la-arquitectura-del-sistema)  
--[7.1 Segmentación por VLAN's](#71-segmentación-por.vlan's)  
+-[7.1 Segmentación por VLAN's](#71-segmentación-por-vlan's)  
 -[7.2 Conectividad y Flujo de Datos](#72-conectividad-y-flujo-de-datos)  
 -[7.3 Seguridad y Respaldo](#73-seguridad-y-respaldo)  
-
-
-### 8.4 Servidores  
-### 9.5 Almacenamiento  
-### 9.6 Infraestructura Adicional  
-### 9.7 Mecanismos de Redundancia  
-### 9.8 Herramientas de Virtualización  
-### 9.9 Contratación de Servicios AWS S3  
-### 9.10 Dispositivos Utilizados  
-
-## 10. Diseño de la Seguridad del Sistema  
-### 10.1 Medidas de Protección  
-### 10.2 Protección contra Amenazas Internas  
-### 10.3 Respuesta ante Ciberataques  
-### 10.4 Políticas de Seguridad  
-### 10.5 Políticas de Protección de Datos  
-### 10.6 Seguridad en Dispositivos Móviles  
+-[8. Selección de maquinaria y software](#8-selección-de-maquinaria-y-software)
+-[8.2 Servidores](#82-servidores)
+-[8.3 Almacenamiento](#83-almacenamiento)
+-[8.4 Infraestructura Adicional](#84-infraestructura-adicional)
+-[8.5 Mecanismos de Redundancia](#85-mecanismos-de-redundancia)
+-[8.6 Herramientas de Virtualización](#86-herramientas-de-virtualixación)
+-[8.7 Contratación de Servicios AWS S3](#87-contratación-de-servicios-aws-s3)
+-[8.8 Dispositivos que vamos a tener](#88-dispositivos-que-vamos-a-tener)
+-[9. Diseño de la Seguridad del Sistema](#9-diseño-de-la-seguridad-del-sistema)
+-[9.1 Medidas de Protección](#91-medidas-de-protección)
+-[9.2 Protección contra Amenazas Internas](#92-protección-contra-amenazas-internas)
+-[9.3 Respuesta ante Ciberataques](#93-respuesta-ante-ciberataques)
+-[9.4 Políticas de Seguridad](#94-políticas-de-seguridad)
+-[9.5 Políticas de Protección de Datos](#95-políticas-de-protección-de-datos)
+-[9.6 Seguridad en Dispositivos Móviles](#96-seguridad-en-dispositivos-móviles) 
 
 ## 11. Diseño del Plan de Recuperación ante Desastres  
 ### 11.1 Estrategia de Copias de Seguridad  
@@ -511,7 +509,7 @@ Para el tema de monitorización vamos a utilizar Prometheus ya que es más escal
 - **SAI** para evitar pérdida de datos ante cortes eléctricos.
 - **NAS** como almacenamiento centralizado para compartir archivos de manera eficiente.
   
-## 8. Selección de maquinaria i software
+## 8. Selección de maquinaria y software
 
 Primero que todo haremos una comparativa de los S.O que podemos utilizar como son el Ubuntu Server y el MS Windows Server 2022. Para saber cuál de los dos nos beneficia más a nuestro CPD para gestionarlo y ponerle las aplicaciones que sean necesarias.  
 
@@ -550,7 +548,7 @@ Primero que todo haremos una comparativa de los S.O que podemos utilizar como so
 
 Creemos que la mejor opción para gestionar nuestro CPD la mejor opción es la de **Windows Server 22**. Por qué podemos tener una interfaz gráfica que puede ser mucho más intuitiva que la de Ubuntu que sería por comandos entonces la administración con Windows sería más fácil por ser gráficamente y por las aplicaciones que incluye con Microsoft que son de pago pero que nos pueden ayudar mucho a la gestión del CPD para la aplicación de los productos de los supermercados, como Active Directory, SQL Server y Azure, además de soporte nativo para Hyper-V, ideal para virtualización. Su enfoque en la seguridad incluye características avanzadas como Secured-Core, SMB cifrado y TLS 1.3 por defecto, garantizando protección robusta para tus datos.
 
-1. Servidores
+## 8.1 Servidores
 
 <a name="_page5_x69.00_y73.00"></a>**Servidor 1: Controlador principal** 
 
@@ -574,8 +572,9 @@ Creemos que la mejor opción para gestionar nuestro CPD la mejor opción es la d
 
 - Disponer de copias espejo para permitir una rápida restauración de Active Directory, servicios que tengamos instalados. 
 - Sincronización de base de datos mediante SQL para poder recuperarlo si fuera necesario.  
-- Configuraciones de redundancia (RAID) para mayor fiabilidad. 
-2. Almacenamiento
+- Configuraciones de redundancia (RAID) para mayor fiabilidad.
+  
+## 8.3 Almacenamiento
 
 <a name="_page6_x69.00_y73.00"></a>El almacenamiento que hemos elegido es el siguiente: 
 
@@ -587,7 +586,8 @@ Creemos que la mejor opción para gestionar nuestro CPD la mejor opción es la d
 - SSD para datos menos utilizados o copias de seguridad.
 - **Opciones de escalabilidad:**
 - Si necesitamos más servicios podremos contratar los servicios en la nube como Azure o AWS S3 para almacenamiento adicional, lo que nos puede reducir la necesidad de grandes inversiones iniciales en hardware.
-3. Infraestructura<a name="_page6_x69.00_y339.00"></a> Adicional 
+  
+## 8.4 Infraestructura  Adicional 
 
 Para tener una virtualización estable, seguro y eficiente, es esencial contar con una infraestructura adicional que este adecuada. Eso incluye sistemas de alimentación redundantes, equipos de red avanzados y mecanismos de refrigeración eficientes. 
 
@@ -618,7 +618,7 @@ Vamos a utilizar la refrigeración por aire pensamos que es la más adecuada par
 - Sensores de Temperatura y humanidad para tenerlo monitorizada en tiempo real.  
 - Sistemas de ventilación redundantes para evitar los puntos de fallos únicos. 
 - Utilizaremos sistema de refrigeración con tecnología de ahora energético para reducir costes operativos.  
-4. Mecanismos<a name="_page7_x69.00_y440.00"></a> de Redundancia 
+## 8.5 Mecanismos de Redundancia 
 
 Sistemas de alimentación:  
 
@@ -626,7 +626,7 @@ Vamos a obtener un **SAIs** para poder garantizar la disponibilidad de energía 
 
 También instalaremos generadores eléctricos junto al SAIs en el CPD para garantizar la continuidad del servicio durante los cortes eléctricos que podamos tener. 
 
-5. Herramientas<a name="_page8_x69.00_y73.00"></a> de Virtualización
+## 8.6 Herramientas de Virtualización
 
 **Hyper-V:** Utilizaremos el hyper-v que ya viene integrado en Windows Server 2022 que nos permitirá crear y gestionar las máquinas virtuales que sean necesarias para nuesto centro de datos. Esto nos ayudará en los servidores y mejorar la eficiencia de hardware.  
 
@@ -640,7 +640,7 @@ También instalaremos generadores eléctricos junto al SAIs en el CPD para garan
 
 no parar el servicio del CPD.  
 
-6. Contratación<a name="_page8_x69.00_y445.00"></a> de Servicios AWS S3
+## 8.7 Contratación de Servicios AWS S3
 
 Vamos a contratar servicios externos que serán los de AWS S3 que es de Amazon. Lo vamos a contratar para poder mejor la gestión y el almacenamiento de datos de la aplicación del supermercado de la comparación de los precios. 
 
@@ -649,7 +649,7 @@ Vamos a contratar servicios externos que serán los de AWS S3 que es de Amazon. 
 - **Almacenamiento Seguro y Escalable:** AWS S3 no permite almacenar grandes volúmenes de datos seguro y escalable dependiendo de las necesidades. 
 - **Alta Disponibilidad:** Con los servicios de AWS S3 nos podemos asegurar de que los datos estarán accesibles incluso cuando tengamos picos de tráfico altos. 
 - **Copia de Seguridad y Recuperación:** AWS S3 nos facilita la creación de copias de seguridad regulares y poder recuperar los datos de forma rápida y segura en caso de tener algún problema o fallo. 
-7. Dispositivos<a name="_page9_x69.00_y73.00"></a> que vamos a tener. 
+## 8.8 Dispositivos que vamos a tener
 - 5 Ordenadores: Que estarán en diferentes VLANS para poder gestionar el CPD 
 - 2 switch: Para poder conectar los dispositivos de red como los servidores, ordenadores.  
 - 1 Router: Para tener salida a Internet y también poder comunicarse entre las redes locales del CPD 
