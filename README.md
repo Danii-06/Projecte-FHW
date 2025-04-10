@@ -35,13 +35,14 @@
 -[6.1 Identificación de Riesgos](#61-identificación-de-riesgos)  
 -[6.2 Evaluación de los Riesgos](#62-evaluación-de-los-riesgos)  
 -[6.3 Plan de Contingencias](#63-plan-de-contingencias)  
--[6.4 Protocolos de Actuación](#64-protocolos-de-actuación)  
+-[6.4 Protocolos de Actuación](#64-protocolos-de-actuación)    
+-[7. Diseño de la Arquitectura del Sistema](#7-diseño-de-la-arquitectura-del-sistema)  
+-[7.1 Segmentación por VLAN's](#71-segmentación-por.vlans)  
+-[7.2 Conectividad y Flujo de Datos](#72-conectividad-y-flujo-de-datos)
+-[7.3 Seguridad y Respaldo](#73-seguridad-y-respaldo)
 
-## 9. Diseño de la Arquitectura del Sistema  
-### 9.1 Segmentación por VLANs  
-### 9.2 Conectividad y Flujo de Datos  
-### 9.3 Seguridad y Respaldo  
-### 9.4 Servidores  
+
+### 8.4 Servidores  
 ### 9.5 Almacenamiento  
 ### 9.6 Infraestructura Adicional  
 ### 9.7 Mecanismos de Redundancia  
@@ -487,10 +488,10 @@ Para el tema de monitorización vamos a utilizar Prometheus ya que es más escal
 1. Verificación y Restauración 
 1. Informe y Prevención
   
-# Diseño de la arquitectura del sistema 
+# 7. Diseño de la arquitectura del sistema 
 ![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%202.png)
 
-1. Segmentación<a name="_page2_x69.00_y693.00"></a> por VLAN’s 
+## 7.1 Segmentación por VLAN’s 
 - **VLAN 10 – Usuarios internos** 
 - Contiene las estaciones de trabajo con direcciones en el rango 192.168.10.X 
 - Se conectan a los switches de red para acceder a los servicios del CPD.
@@ -501,15 +502,16 @@ Para el tema de monitorización vamos a utilizar Prometheus ya que es más escal
 - Aloja los servidores y dispositivos de almacenamiento.
 - Incluye el Servidor Controlador Principal, el Servidor de Aplicaciones y Bases de Datos, y el Servidor de Respaldo que está ubicado en un diferente lugar. 
 - Integra sistemas como NAS y SAI para garantizar la continuidad del servicio. 
-2. Conectividad<a name="_page3_x69.00_y304.00"></a> y Flujo de Datos 
+## 7.2 Conectividad y Flujo de Datos 
 - Un switch principal se encarga de interconectar las VLANs.
 - El tráfico de datos fluye desde las estaciones de trabajo (VLAN 10 y VLAN 20) hacia los servidores (VLAN 30). 
 - Existe un enlace a Internet a través de un router.
-3. Seguridad<a name="_page3_x69.00_y436.00"></a> y Respaldo 
+## 7.3 Seguridad y Respaldo 
 - **Servidor de Respaldo** para copias de seguridad y recuperación ante fallos.
 - **SAI** para evitar pérdida de datos ante cortes eléctricos.
-- **NAS** como almacenamiento centralizado para compartir archivos de manera eficiente. 
-2. **Selección de maquinaria i software**
+- **NAS** como almacenamiento centralizado para compartir archivos de manera eficiente.
+  
+## 8. Selección de maquinaria i software
 
 Primero que todo haremos una comparativa de los S.O que podemos utilizar como son el Ubuntu Server y el MS Windows Server 2022. Para saber cuál de los dos nos beneficia más a nuestro CPD para gestionarlo y ponerle las aplicaciones que sean necesarias.  
 
