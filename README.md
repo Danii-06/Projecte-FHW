@@ -17,8 +17,8 @@
 -[2.1 Requisitos de Hardware](#21-requisitos-de-hardware)  
 -[2.2 Requisitos de Software](#22-requisitos-de-software)  
 -[2.3 Requisitos de Red](#23-requisitos-de-red)    
--[2.4 Capacidades Técnicas Necesarias](#24-capacidades-técnicas-necesarias)
--[2.5 Ejemplo de Escenario de Uso](#25-ejemplo-de-escenario-de-uso)  
+-[2.4 Capacidades Técnicas Necesarias](#24-capacidades-técnicas-necesarias)  
+-[2.5 Ejemplo de un posible escenario para el uso de la red social](#25-ejemplo-de-un-posible-escenario-para-el-uso-de-la-red-social)  
 
 ## 3. Cronograma del Proyecto  
 
