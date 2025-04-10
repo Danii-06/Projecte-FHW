@@ -75,11 +75,12 @@
 -[13. Instalación del Servidor](#13-instalación-del-servidor)  
 -[13.1 Instalación de RAID 5 por Software](#131-instalación-de-raid-5-por-software)  
 -[13.2 Creación de los Usuarios para los Trabajadores](#132-creación-de-los-usuarios-para-los-trabajadores)  
--[13.3 Instalación de Aomei Backupper Server y Copia del Disco del Sistema](#133-instalación-de-aomei-backupper-server-y-copia-del-disco-del-sistema)  
+-[13.3 Instalación de Aomei Backupper Server y una Copia del Disco del Sistema Operativo](#133-instalación-de-aomei-backupper-server-y-una-copia-del-disco-del-sistema-operativo)  
 -[13.4 Restauración de la Copia de Seguridad del Sistema](#134-restauración-de-la-copia-de-seguridad-del-sistema)  
 -[13.5 Ubuntu Server](#135-ubuntu-server)  
 -[13.6 Romper el RAID y Recuperarlo](#136-romper-el-raid-y-recuperarlo)  
 
+13.3 Instalación de Aomei Backupper Server y una Copia del Disco del Sistema Operativo
 
 
 
@@ -1017,7 +1018,7 @@ sistema.
 
 **FIGURA-14:** En usuarios y Grupos locales en la carpeta de usuarios aparecerán todos los usuarios que tiene el equipo. 
 
-## 13.3 Instalación de Aomei Backupper Server y una copia del disco del sistema operativo  
+## 13.3 Instalación de Aomei Backupper Server y una Copia del Disco del Sistema Operativo
 
    Instalaremos AOMEI Backupper para hacer copias de seguridad por si tenemos algún problema. 
 
