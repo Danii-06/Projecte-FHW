@@ -20,10 +20,10 @@
 -[2.4 Capacidades Técnicas Necesarias](#24-capacidades-técnicas-necesarias)  
 -[2.5 Ejemplo de un posible escenario para el uso de la red social](#25-ejemplo-de-un-posible-escenario-para-el-uso-de-la-red-social)  
 -[3. Cronograma del Proyecto](#3-cronograma-del-proyecto)
--[4. Asignación de Roles y Responsabilidades](#4-asignación-de-roles-y-responsabilidades)
--[4.1 Roles del Equipo](#41-roles-del-equipo)
--[4.2 Dinámica entre Roles](#42-dinámica-entre-roles)
--[4.3 Actividades del Proyecto](#43-actividades-del-proyecto)
+-[4. Asignación de Roles y Responsabilidades](#4-asignación-de-roles-y-responsabilidades)   
+-[4.1 Roles del Equipo](#41-roles-del-equipo)  
+-[4.2 Dinámica entre Roles](#42-dinámica-entre-roles)  
+-[4.3 El Trabajo se basa en 7 actividades:](#43-el-trabajo-se-basa-en-7-actividades)   
 
 ## 7. Identificación de Recursos Necesarios  
 ### 7.1 Recursos Humanos  
