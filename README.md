@@ -56,7 +56,7 @@
 -[9.5 Políticas de Protección de Datos](#95-políticas-de-protección-de-datos)  
 -[9.6 Seguridad en Dispositivos Móviles](#96-seguridad-en-dispositivos-móviles)   
 -[9.7 Resultado Esperado](#97-resultado-esperado)   
--[10. Diseño del Plan de Recuperación frente Desastres](#10-diseño-del-plan-de-recuperación-frente-desastres)  
+-[10. Diseño de el plan de Recuperación frente Desastres](#10-diseño-de-el-plan-de-recuperación-frente-desastres)  
 -[10.1 Estrategia de Copias de Seguridad](#101-estrategia-de-copias-de-seguridad)  
 -[10.2 Almacenamiento de las Copias](#102-almacenamiento-de-las-copias)  
 -[10.3 Restauración de Sistemas y Datos](#103-restauración-de-sistemas-y-datos)  
