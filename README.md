@@ -34,7 +34,7 @@
 -[6. Evaluación de Riesgos y Planificación de Contingencias](#6-evaluación-de-riesgos-y-planificación-de-contingencias)  
 -[6.1 Identificación de Riesgos](#61-identificación-de-riesgos)  
 -[6.2 Evaluación de los Riesgos](#62-evaluación-de-los-riesgos)  
--[6.3 Plan de Contingencias](#63-plan-de-contngencias)  
+-[6.3 Plan de Contingencias](#63-plan-de-contingencias)  
 -[6.4 Protocolos de Actuación](#64-protocolos-de-actuación)  
 
 ## 9. Diseño de la Arquitectura del Sistema  
@@ -486,7 +486,7 @@ Para el tema de monitorización vamos a utilizar Prometheus ya que es más escal
 1. Respuesta y Solución 
 1. Verificación y Restauración 
 1. Informe y Prevención
-2.    
+  
 # Diseño de la arquitectura del sistema 
 ![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%202.png)
 
