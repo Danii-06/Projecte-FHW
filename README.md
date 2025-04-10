@@ -32,10 +32,10 @@
 -[5.5 Costes de Infraestructura y Mantenimiento](#55-costes-de-infraestructura-y-mantenimiento)  
 -[5.6 Estimación Financiera](#56-estimación-financiera)  
 -[6. Evaluación de Riesgos y Planificación de Contingencias](#6-evaluación-de-riesgos-y-planificación-de-contingencias)  
--[6.1 Identificación de Riesgos](#81-identificación-de-riesgos)  
--[6.2 Evaluación de los Riesgos](#82-evaluación-de-los-riesgos)  
--[6.3 Plan de Contingencias](#83-plan-de-contngencias)  
--[6.4 Protocolos de Actuación](#84-protocolos-de-actuación)  
+-[6.1 Identificación de Riesgos](#61-identificación-de-riesgos)  
+-[6.2 Evaluación de los Riesgos](#62-evaluación-de-los-riesgos)  
+-[6.3 Plan de Contingencias](#63-plan-de-contngencias)  
+-[6.4 Protocolos de Actuación](#64-protocolos-de-actuación)  
 
 ## 9. Diseño de la Arquitectura del Sistema  
 ### 9.1 Segmentación por VLANs  
