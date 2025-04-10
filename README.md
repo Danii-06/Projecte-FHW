@@ -11,8 +11,8 @@
 
 -[1. Introducción](#1-Introducción)  
 -[1.1 Objetivos del Proyecto](#11-objetivos-del-proyecto)
- -[1.2 Requisitos Funcionales ](#12-requistos-funcionales)
- -[1.3 Requisitos No Funcionales](#13-requisitos-no-funcionales) 
+-[1.2 Requisitos Funcionales ](#12-requistos-funcionales)
+-[1.3 Requisitos No Funcionales](#13-requisitos-no-funcionales) 
 
 ## 4. Análisis de Requisitos  
 ### 4.1 Requisitos de Hardware  
