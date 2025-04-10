@@ -11,9 +11,8 @@
 
 -[1. Introducción](#1-Introducción)  
 -[1.1 Objetivos del Proyecto](#11-objetivos-del-proyecto)
-## 3. Requisitos  
-### 3.1 Requisitos Funcionales  
-### 3.2 Requisitos No Funcionales  
+ -[1.2 Requisitos Funcionales ](#12-requistos-funcionales)
+ -[1.3 Requisitos No Funcionales](#13-requisitos-no-funcionales) 
 
 ## 4. Análisis de Requisitos  
 ### 4.1 Requisitos de Hardware  
@@ -130,7 +129,7 @@ En el CPD se encargará de almacenar toda la información de la red social más 
 
   Almacenar copias de seguridad de la aplicación por si hay algún problema poder tener los datos almacenados y no perder la información.  
 
-2. **Requisitos<a name="_page3_x69.00_y542.00"></a> Funcionales**
+2. **Requisitos Funcionales**
 - **Gestión de usuarios de la aplicación** 
 - Que se puedan registrar y autentificar en la aplicación, tener una gestión de diferentes roles como (admin, usuario), también añadir una funcionalidad para que los usuarios puedan editar su perfil y así añadir los productos de los supermercados a la red social.  
 - **Gestión de los productos** 
