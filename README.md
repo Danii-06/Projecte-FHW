@@ -19,13 +19,11 @@
 -[2.3 Requisitos de Red](#23-requisitos-de-red)    
 -[2.4 Capacidades Técnicas Necesarias](#24-capacidades-técnicas-necesarias)  
 -[2.5 Ejemplo de un posible escenario para el uso de la red social](#25-ejemplo-de-un-posible-escenario-para-el-uso-de-la-red-social)  
-
-## 3. Cronograma del Proyecto  
-
-## 6. Asignación de Roles y Responsabilidades  
-### 6.1 Roles del Equipo  
-### 6.2 Dinámica entre Roles  
-### 6.3 Actividades del Proyecto  
+-[3. Cronograma del Proyecto](#3-cronograma-del-proyecto)
+-[4. Asignación de Roles y Responsabilidades](#4-asignación-de-roles-y-responsabilidades)
+-[4.1 Roles del Equipo](#41-roles-del-equipo)
+-[4.2 Dinámica entre Roles](#42-dinámica-entre-roles)
+-[4.3 Actividades del Proyecto](#43-actividades-del-proyecto)
 
 ## 7. Identificación de Recursos Necesarios  
 ### 7.1 Recursos Humanos  
@@ -224,7 +222,7 @@ Nuestro CPD no requerirá una gran cantidad de hardware ni de última generació
 - **Actualización de precios:** 
 - Si un usuario encuentra un precio más bajo para el producto, puede cambiarlo y actualizarlo automáticamente en la base de datos. 
 
-<a name="_page7_x69.00_y436.00"></a>**3 Cronograma del proyecto**  
+## 3. Cronograma del proyecto
 
 
 
@@ -242,7 +240,7 @@ Nuestro CPD no requerirá una gran cantidad de hardware ni de última generació
 |Ivan** |7\.Revisión y aprobación del plan de proyecto |09/01/2025 |||
 <a name="_page8_x69.00_y142.00"></a>**4. Asignación de roles y responsabilidades**
 
-# Asignación de roles y responsabilidades
+## 4. Asignación de roles y responsabilidades
 
 **Líder:** 
 
@@ -252,7 +250,7 @@ En la Plataforma trello tenemos toda la planificación del proyecto desde ahí p
 
 ![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%201.png)
 
-1. **Los<a name="_page8_x69.00_y630.00"></a> Roles del equipo**
+## 4.1 Roles del equipo
 
 **-El líder**, que es Dani 
 
@@ -281,7 +279,7 @@ En la Plataforma trello tenemos toda la planificación del proyecto desde ahí p
 - **Control de calidad:** Realiza pruebas para verificar que los entregables cumplan con los estándares requeridos.
 - **Gestión de recursos:** Coordina materiales, herramientas y logística necesarios para el proyecto. 
 - **Apoyo en documentación:** Colabora con el líder para documentar avances y resultados. 
-2. **Dinámica<a name="_page9_x69.00_y665.00"></a> entre roles**
+## 4.2 Dinámica entre roles
 - **Líder:** 
 
   Define y prioriza tareas, además de monitorear su progreso.
@@ -300,7 +298,7 @@ En la Plataforma trello tenemos toda la planificación del proyecto desde ahí p
 
   Gestiona los recursos necesarios para el equipo técnico.
 
-3. **El<a name="_page10_x69.00_y463.00"></a> Trabajo se basa en 7 actividades:** 
+## 4.3 El Trabajo se basa en 7 actividades:
 
 **Actividad 1** 
 
