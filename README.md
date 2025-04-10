@@ -80,8 +80,7 @@
 -[13.5 Ubuntu Server](#135-ubuntu-server)  
 -[13.6 Romper el RAID y Recuperarlo](#136-romper-el-raid-y-recuperarlo)  
 
-13.3 Instalación de Aomei Backupper Server y una Copia del Disco del Sistema Operativo
-
+---
 
 
    
