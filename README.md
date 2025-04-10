@@ -23,13 +23,12 @@
 -[4. Asignación de Roles y Responsabilidades](#4-asignación-de-roles-y-responsabilidades)     
 -[4.1 Roles del Equipo](#41-roles-del-equipo)  
 -[4.2 Dinámica entre Roles](#42-dinámica-entre-roles)  
--[4.3 El Trabajo se basa en 7 actividades:](#43-el-trabajo-se-basa-en-7-actividades)   
-
-## 7. Identificación de Recursos Necesarios  
-### 7.1 Recursos Humanos  
-### 7.2 Costes de Hardware  
-### 7.3 Costes de Software  
-### 7.4 Costes de Red  
+-[4.3 El Trabajo se basa en 7 actividades:](#43-el-trabajo-se-basa-en-7-actividades)     
+-[5. Identificación de Recursos Necesarios](#5-identificación-de-recursos-necesrios)  
+-[5.1 Recursos Humanos](#51-recursos-humanos)   
+-[5.2 Costes de Hardware](#52-costes-de-hardware)  
+-[5.3 Costes de Software](#53-costes-de-software)   
+-[5.4 Costes de Red](#54-costes-de-red)  
 ### 7.5 Costes de Infraestructura y Mantenimiento  
 ### 7.6 Estimación Financiera  
 
