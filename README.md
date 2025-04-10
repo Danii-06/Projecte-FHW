@@ -55,7 +55,7 @@
 -[9.4 Políticas de Seguridad](#94-políticas-de-seguridad)  
 -[9.5 Políticas de Protección de Datos](#95-políticas-de-protección-de-datos)  
 -[9.6 Seguridad en Dispositivos Móviles](#96-seguridad-en-dispositivos-móviles)   
--[9.7 Resultado Esperado](#98-resultado-esperado) 
+-[9.7 Resultado Esperado](#97-resultado-esperado) 
 
 ## 11. Diseño del Plan de Recuperación ante Desastres  
 ### 11.1 Estrategia de Copias de Seguridad  
