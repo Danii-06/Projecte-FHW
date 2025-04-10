@@ -58,10 +58,10 @@
 -[9.7 Resultado Esperado](#97-resultado-esperado)   
 -[10. Diseño del Plan de Recuperación frente Desastres](#10-diseño-del-plan-de-recuperación-frente-desastres)  
 -[10.1 Estrategia de Copias de Seguridad](#101-estrategia-de-copias-de-seguridad)  
--[10.2 Almacenamiento de Copias](#102-almacenamiento-de-copias)  
+-[10.2 Almacenamiento de las Copias](#102-almacenamiento-de-las-copias)  
 -[10.3 Restauración de Sistemas y Datos](#103-restauración-de-sistemas-y-datos)  
 -[10.4 Mecanismos de Redundancia](#104-mecanismos-de-redundancia)  
--[10.5 Documentación y Pruebas Regulares](#105-docuemtación-y-pruebas-regulares)  
+-[10.5 Documentación y Pruebas Regulares](#105-documentación-y-pruebas-regulares)  
 
 ## 12. Manual del Usuario del CPD  
 ### 12.1 Acceso al Sistema  
