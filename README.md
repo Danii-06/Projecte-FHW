@@ -62,11 +62,10 @@
 -[10.3 Restauración de Sistemas y Datos](#103-restauración-de-sistemas-y-datos)  
 -[10.4 Mecanismos de Redundancia](#104-mecanismos-de-redundancia)  
 -[10.5 Documentación y Pruebas Regulares](#105-documentación-y-pruebas-regulares)  
-
-## 12. Manual del Usuario del CPD  
-### 12.1 Acceso al Sistema  
-### 12.2 Uso de Recursos del CPD  
-### 12.3 Resolución de Problemas  
+-[11. Manual del Usuario del CPD](#11-manual-del-usuario-del-cpd)  
+-[11.1 Acceso al Sistema](#111-acceso-al-sistema)  
+-[11.2 Uso de Recursos del CPD](#112-uso-de-recursos-del-cpd)  
+-[11.3 Resolución de Problemas](#113-resolución-de-problemas)  
 
 ## 13. Guía de Administración del CPD  
 ### 13.1 Gestión de Servidores  
@@ -823,11 +822,11 @@ Se realizarán pruebas de intrusión periódicas para identificar vulnerabilidad
 - Verificar que las copias de seguridad se restauren correctamente.
 - Medir los tiempos de recuperación.
 - Identificar puntos de mejora en los procedimientos.
-5. Manual<a name="_page16_x69.00_y73.00"></a> de Usuario del CPD 
+## 11. Manual de Usuario del CPD 
 
 El manual de los usuarios servirá para poder orientar a todos los Usuarios que puedan entrar al Centro de Procesamiento de Datos (CPD) sobre el uso correcto de los sistemas, las normas de acceso y uso y las buenas prácticas para poder asegurar la continuidad y seguridad del servicio del CPD.  
 
-1. Acceso<a name="_page16_x69.00_y209.00"></a> al Sistema  
+## 11.1 Acceso al Sistema  
 - **Al Iniciar sesión** 
 - Conectar los ordenadores de trabajo a la VLAN correspondiente.
 - Ingresar al sistema con las credenciales asignadas necesarias. 
@@ -835,7 +834,7 @@ El manual de los usuarios servirá para poder orientar a todos los Usuarios que 
 - Mantener la confidencialidad de las credenciales.
 - No compartir accesos con terceros
 - Informar de cualquier actividad sospechosa al administrador del sistema 
-2. Uso<a name="_page16_x69.00_y412.00"></a> de Recursos del CPD  
+## 11.2 Uso de Recursos del CPD  
 - **Acceso a servidores** 
 - Utilizar el protocolo RDP o SHH para la gestión remota de los servidores.
 - Limitar las conexiones a lo que sea necesario para que puedan trabajar.
@@ -845,7 +844,7 @@ El manual de los usuarios servirá para poder orientar a todos los Usuarios que 
 - **Copias de Seguridad**  
 - No modificar ni eliminar archivos destinados a backups 
 - Consultar al administrador si se requiere restaurar algún dato de alguna copia.  
-3. Resolución<a name="_page16_x69.00_y663.00"></a> de Problemas 
+## 11.3 Resolución de Problemas 
 - **Problemas de inicio de sesión** 
 - Verificar que las credenciales son las correctas
 - Confirmar que estas en la VLAN adecuada para tener acceso a los servidores e internet.  
