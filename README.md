@@ -29,8 +29,8 @@
 -[5.2 Costes de Hardware](#52-costes-de-hardware)  
 -[5.3 Costes de Software](#53-costes-de-software)   
 -[5.4 Costes de Red](#54-costes-de-red)  
-### 7.5 Costes de Infraestructura y Mantenimiento  
-### 7.6 Estimación Financiera  
+-[5.5 Costes de Infraestructura y Mantenimiento](#55-costes-de-infraestructura-y-mantenimiento)  
+-[5.6 Estimación Financiera](#56-estimación-financiera)  
 
 ## 8. Evaluación de Riesgos y Planificación de Contingencias  
 ### 8.1 Identificación de Riesgos  
@@ -341,7 +341,7 @@ Act6 se encarga Dani
 
 Act7 se encarga Dani 
 
-<a name="_page11_x69.00_y601.00"></a>**5 identificación de recursos necesarios.**
+## 5. Identificación de Recursos Necesarios.
 
 Determinar la disponibilidad de recursos:
 
@@ -349,7 +349,7 @@ Para poder crear este proyecto lo vamos a hacer 3 persona que serían Dani, Ivá
 
 Esto sería un resumen de los recursos necesarios que creemos que serían necesarios para el CPD 
 
-1. **Recursos<a name="_page12_x69.00_y73.00"></a> Humanos** 
+## 5.1 Recursos Humanos
 
 
 
@@ -359,7 +359,7 @@ Esto sería un resumen de los recursos necesarios que creemos que serían necesa
 |Desarrollad or web ||1 |Media |1,700€ por persona |Trabajar en srpints |
 |Gestor de Proyectos |Planificación seguimiento y reportes  |1 |Media |1,700€ por persona |Asegurar el cumplimie nto de plazos y objetivos |
 
-2. **Costes<a name="_page12_x69.00_y547.00"></a> de Hardware**  
+## 5.2 Costes de Hardware
 
 
 
@@ -370,7 +370,7 @@ Esto sería un resumen de los recursos necesarios que creemos que serían necesa
 |Backup Externo |Dispositivo NAS para copias de seguridad |2 |2,500€ |5,000€ |
 |Redundancia UPS |Suministro de energía  |1 |800€ |800€  |
 
-3. **Costes<a name="_page13_x69.00_y101.00"></a> de Software** 
+## 5.3 Costes de Software
 
 
 
@@ -386,7 +386,7 @@ Hemos elegido Windows Server 22 para gestionar el CPD por sus características y
 Vamos a utilizar MongoDB para el almacenamiento de imágenes dentro de la aplicación del supermercado es una decisión estratégica que nos permite ofrecer un servicio rápido, seguro y escalable. Con el uso de GridFS, la arquitectura flexible y la alta disponibilidad de nuestro CPD, podemos asegurar una experiencia de usuario óptima y una gestión eficiente de las imágenes. 
 
 - MongoDB permite guardar imágenes y metadatos en un mismo documento, evitando la necesidad de múltiples bases de datos como en SQL.
-4. **Costes<a name="_page13_x69.00_y575.00"></a> de Red** 
+## 5.4 Costes de Red
 
 
 
@@ -405,7 +405,7 @@ Vamos a utilizar MongoDB para el almacenamiento de imágenes dentro de la aplica
 
 Vamos a utilizar un balanceador de carga físico por un mayor rendimiento, tener menor latencia y menor uso de CPU en los servidores. También nos garantiza más rendimiento, fiabilidad y escalabilidad en comparación a una solución con software. A pesar de que una solución basada en software puede ser viable en algunos casos, en nuestro contexto empresarial y técnico, el coste-beneficio de un dispositivo físico justifica plenamente la inversión 
 
-5. **Costes<a name="_page14_x69.00_y333.00"></a> de Infraestructura y Mantenimiento**
+## 5.5 Costes de Infraestructura y Mantenimiento
 
 
 
@@ -418,8 +418,7 @@ Vamos a utilizar un balanceador de carga físico por un mayor rendimiento, tener
 |Actualizaciones de Software |Mantenimien to y actualización |Mensual |100€ |Optimizaciones periódicas |
 |Ordenadores |3 equipos para la administraci ón |Anual |3,000€ |Los equipos tienen una vida útil de 3 a 5 años antes de necesitar sustituciones |
 
-6. **Estimación<a name="_page14_x69.00_y711.00"></a> Financiera**  
-
+## 5.6 Estimación Financiera
 
 
 |Categoría |Coste Total Estimado €  |
