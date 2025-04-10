@@ -74,7 +74,7 @@
 -[12.5 Documentación y Auditorías](#125-documentación-y-auditorías)  
 -[13. Instalación del Servidor](#13-instalación-del-servidor)  
 -[13.1 Instalación de RAID 5 por Software](#131-instalación-de-raid-5-por-software)  
--[13.2 Creación de Usuarios para Trabajadores](#132-creación-de-usuarios-para-trabajadores)  
+-[13.2 Creación de los Usuarios para los Trabajadores](#132-creación-de-los-usuarios-para-los-trabajadores)  
 -[13.3 Instalación de Aomei Backupper Server y Copia del Disco del Sistema](#133-instalación-de-aomei-backupper-server-y-copia-del-disco-del-sistema)  
 -[13.4 Restauración de la Copia de Seguridad del Sistema](#134-restauración-de-la-copia-de-seguridad-del-sistema)  
 -[13.5 Ubuntu Server](#135-ubuntu-server)  
