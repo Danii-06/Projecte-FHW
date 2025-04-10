@@ -80,7 +80,7 @@
 -[13.5 Ubuntu Server](#135-ubuntu-server)  
 -[13.6 Romper el RAID y Recuperarlo](#136-romper-el-raid-y-recuperarlo)  
 
- 
+
 
 
    
@@ -927,7 +927,7 @@ A la hora de añadir un nuevo disco tuvimos muchos problemas con los discos que 
 
 **FIGURA-2:** Captura de los dos discos en marcha.
 
-## 13.2 Instalación de RAID 5 por Software
+## 13.1 Instalación de RAID 5 por Software
 
 Después de tener un Windows Server 22 instalado hemos tenido que investigar como poder hacer un raid 5 por software porque hemos tenido algún problema que otro por que la tecnología de Raid 5 necesita mínimo 3 discos para poder crearse. Entonces hicimos particiones en un segundo disco físico que metimos, pero no pedimos crear el raid porque por particiones simple no nos dejaba. Luego de unos días estar investigando y preguntado también a compañeros lo podíamos hacer y lo vamos a explicar a continuación.  
 
@@ -975,7 +975,7 @@ Luego de repetir esto 3 veces para crear los 3 disco virtuales nos vamos al admi
 
 **FIGURA-9:** En el administrador del servidor nos vamos a los grupos de almacenamiento para poder añadir el disco físico que tenemos a los discos virtuales que hemos creado.**  
 
-## 13.3 Creación de los usuarios para los trabajadores
+## 13.2 Creación de los usuarios para los Trabajadores
 
 ![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2012.png)
 
@@ -1017,7 +1017,7 @@ sistema.
 
 **FIGURA-14:** En usuarios y Grupos locales en la carpeta de usuarios aparecerán todos los usuarios que tiene el equipo. 
 
-## 13.4 Instalación de Aomei Backupper Server y una copia del disco del sistema operativo  
+## 13.3 Instalación de Aomei Backupper Server y una copia del disco del sistema operativo  
 
    Instalaremos AOMEI Backupper para hacer copias de seguridad por si tenemos algún problema. 
 
@@ -1049,7 +1049,7 @@ sistema.
 
 **FIGURA-21** Y luego la tendremos en el equipo exportado para poder utilizar la copia cuando lo necesitemos.
 
-## 13.5 Restauración de la copia de seguridad del sistema
+## 13.4 Restauración de la copia de seguridad del sistema
 
 ![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2024.png)
 
@@ -1071,7 +1071,7 @@ sistema.
 
 **FIGURA-26** Luego lo reiniciaremos con AOMEI Backupper y luego cuando reinicies tendrás los pasos para recuperar la copia de seguridad.** 
 
-## 13.6 Ubuntu Server
+## 13.5 Ubuntu Server
 - Nombre del servidor Ubuntu --> proyecto 
 - Contra --> grupo4 
 
@@ -1079,7 +1079,7 @@ sistema.
 
 **FIGURA-27**  Hemos instalado una máquina virtual de Ubuntu Server y le hemos dado nombre y contraseña luego lo conectaremos a nuestro servidor para que puedan comunicarse.  
 
-## 13.7 Romper el raid y recuperarlo
+## 13.6 Romper el raid y recuperarlo
 
 Lo primero que hacemos es hacer como que nos falla un disco del raid 5 para poder recuperarlo es decir vamos a simular como que en la empresa el raid 5 está funcionando correctamente y de repente un disco del raid 5 falla entonces hay que añadir uno para poder recuperarlo. Vamos a hacer un paso a paso de como lo hemos realizado.  
 
