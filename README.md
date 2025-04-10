@@ -31,12 +31,11 @@
 -[5.4 Costes de Red](#54-costes-de-red)  
 -[5.5 Costes de Infraestructura y Mantenimiento](#55-costes-de-infraestructura-y-mantenimiento)  
 -[5.6 Estimación Financiera](#56-estimación-financiera)  
-
-## 8. Evaluación de Riesgos y Planificación de Contingencias  
-### 8.1 Identificación de Riesgos  
-### 8.2 Evaluación de los Riesgos  
-### 8.3 Plan de Contingencias  
-### 8.4 Protocolos de Actuación  
+-[6. Evaluación de Riesgos y Planificación de Contingencias](#6-evaluación-de-riesgos-y-planificación-de-contingencias)  
+-[6.1 Identificación de Riesgos](#81-identificación-de-riesgos)  
+-[6.2 Evaluación de los Riesgos](#82-evaluación-de-los-riesgos)  
+-[6.3 Plan de Contingencias](#83-plan-de-contngencias)  
+-[6.4 Protocolos de Actuación](#84-protocolos-de-actuación)  
 
 ## 9. Diseño de la Arquitectura del Sistema  
 ### 9.1 Segmentación por VLANs  
@@ -431,11 +430,11 @@ Vamos a utilizar un balanceador de carga físico por un mayor rendimiento, tener
 |Recursos Humanos |5\.100€ |
 |`                                                                         `Total |`  `37.350€ |
 
-<a name="_page15_x69.00_y167.00"></a>**6. Evaluación de riesgos y planificación de contingencias** 
+## 6. Evaluación de riesgos y planificación de contingencias
 
 En este punto, vamos a identificar los posibles riesgos que podrían afectar al CPD y a desarrollar estrategias para prevenir que estos riesgos se materialicen.
 
-1. **Identificación<a name="_page15_x69.00_y273.00"></a> de riesgos** 
+## 6.1 Identificación de riesgos
 - **Riesgos técnicos:**  
 - Sobrecarga del sistema debido al aumento inesperado de usuarios.
 - Perdida de datos por errores en el almacenamiento o fallos en las copias de seguridad. 
@@ -447,7 +446,7 @@ En este punto, vamos a identificar los posibles riesgos que podrían afectar al 
 - Falta de capacidad en el personal.
 - **Riesgos financieros:** 
 - Sobrecostos en el presupuesto estimado del proyecto.
-2. **Evaluación<a name="_page15_x69.00_y548.00"></a> de los riesgos** 
+## 6.2 Evaluación de los riesgos
 
 Vamos a evaluar diferentes riesgos en una tabla identificando el impacto, probabilidad y el nivel de riesgo que supone, todo en una escala de bajo, medio y alto.
 
@@ -462,7 +461,7 @@ Vamos a evaluar diferentes riesgos en una tabla identificando el impacto, probab
 |Retrasos en la configuración ||Medio |Medio |Medio |
 |Sobrecostos de presupuestos||Alto |Bajo |Medio |
 
-3. **Plan<a name="_page16_x69.00_y73.00"></a> de contingencias** 
+## 6.3 Plan de contingencias
 - **Riesgos técnicos:**  
   - **Sobrecarga del sistema:** Vamos a implementar un balanceador de carga para prevenir este problema.  
   - **Pérdida de datos:** Se configurarán copias de seguridad automáticas que se realizarán de forma completa cada semana y de manera incremental cada día que se guardarán en un NAS externo. Además, contaremos con un plan para almacenar datos en la nube.
@@ -477,7 +476,7 @@ Vamos a evaluar diferentes riesgos en una tabla identificando el impacto, probab
 
 - **Riesgos financieros:**  
 - **Sobrecostos:**  Destinaremos un 20% del presupuesto inicial para cubrir posibles sobrecostos.
-4. **Protocolos<a name="_page16_x69.00_y538.00"></a> de actuación** 
+## 6.4 Protocolos de actuación
 
 Para el tema de monitorización vamos a utilizar Prometheus ya que es más escalable y optimizado para entornos en la nube y obtiene métricas en tiempo real. 
 
