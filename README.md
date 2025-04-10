@@ -13,8 +13,7 @@
 -[1.1 Objetivos del Proyecto](#11-objetivos-del-proyecto)  
 -[1.2 Requisitos Funcionales](#12-requisitos-funcionales)  
 -[1.3 Requisitos No Funcionales](#13-requisitos-no-funcionales)  
-
-## 4. Análisis de Requisitos  
+-[2. Análisis de Requisitos](#2-analisis-de-Requisitos)  
 ### 4.1 Requisitos de Hardware  
 ### 4.2 Requisitos de Software  
 ### 4.3 Requisitos de Red  
@@ -162,7 +161,7 @@ En el CPD se encargará de almacenar toda la información de la red social más 
 - Implementar sistemas redundantes y mecanismos de tolerancia a fallos para asegurar la disponibilidad continua del servicio. 
 - **Mantenibilidad** 
 - Tener una serie de copias de seguridad diarias que serían las incrementales y una vez a la semana que fuera una copia de seguridad completa que se guardaría en un servidor aparte cerca de nuestro cpd para tener mayor respaldo. 
-2. **Análisis<a name="_page5_x69.00_y171.00"></a> de requisitos**
+## 2. Análisis de requisitos
 
 Nuestro CPD no requerirá una gran cantidad de hardware ni de última generación, ya que la red social en la que nos enfocaremos está en proceso de darse a conocer y aún no cuenta con muchos usuarios simultáneamente. Si en el futuro logra ganar popularidad, entonces consideraremos añadir más hardware y potencia.
 
