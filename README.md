@@ -55,14 +55,13 @@
 -[9.4 Políticas de Seguridad](#94-políticas-de-seguridad)  
 -[9.5 Políticas de Protección de Datos](#95-políticas-de-protección-de-datos)  
 -[9.6 Seguridad en Dispositivos Móviles](#96-seguridad-en-dispositivos-móviles)   
--[9.7 Resultado Esperado](#97-resultado-esperado) 
-
-## 11. Diseño del Plan de Recuperación ante Desastres  
-### 11.1 Estrategia de Copias de Seguridad  
-### 11.2 Almacenamiento de Copias  
-### 11.3 Restauración de Sistemas y Datos  
-### 11.4 Mecanismos de Redundancia  
-### 11.5 Documentación y Pruebas Regulares  
+-[9.7 Resultado Esperado](#97-resultado-esperado)   
+-[10. Diseño del Plan de Recuperación ante Desastres](#10-diseño-del-plan-de-recuperación-ante-desastres)  
+-[10.1 Estrategia de Copias de Seguridad](#101-estrategia-de-copias-de-seguridad)  
+-[10.2 Almacenamiento de Copias](#102-almacenamiento-de-copias)  
+-[10.3 Restauración de Sistemas y Datos](#103-restauración-de-sistemas-y-datos)  
+-[10.4 Mecanismos de Redundancia](#104-mecanismos-de-redundancia)  
+-[10.5 Documentación y Pruebas Regulares](#105-docuemtación-y-pruebas-regulares)  
 
 ## 12. Manual del Usuario del CPD  
 ### 12.1 Acceso al Sistema  
@@ -771,7 +770,7 @@ Se realizarán pruebas de intrusión periódicas para identificar vulnerabilidad
 
    Un usuario puede acceder en la red social sabiendo que sus datos están protegidos. En caso de un ataque, los sistemas de seguridad bloquean la acción inmediatamente y los administradores pueden actuar según el protocolo establecido. 
 
-4. **Diseño<a name="_page13_x69.00_y692.00"></a> de el plan de recuperación frente a desastres.** 
+## 10. Diseño de el plan de Recuperación frente a Desastres
 - **Propósito del plan:** 
 
   Garantizar la continuidad de la red social de productos de supermercado ante fallos críticos o desastres, minimizando la pérdida de datos y tiempo de inactividad. 
@@ -780,7 +779,7 @@ Se realizarán pruebas de intrusión periódicas para identificar vulnerabilidad
 - Definir procedimientos para realizar copias de seguridad periódicas.
 - Establecer estrategias para la restauración rápida de sistemas y datos.
 - Asegurar la integridad y disponibilidad de los datos almacenados.
-1. **Estrategia<a name="_page14_x69.00_y211.00"></a> de Copias de Seguridad** 
+## 10.1 Estrategia de Copias de Seguridad
 - **Copias completas:** 
 - Se realizan semanalmente para guardar una imagen completa de todos los datos. 
 - Ventaja: Todo está en un solo punto de restauración.
@@ -789,14 +788,14 @@ Se realizarán pruebas de intrusión periódicas para identificar vulnerabilidad
 - Se realizan diariamente para guardar solo los datos nuevos o modificados desde la última copia. 
 - Ventaja: Reduce el tiempo y espacio requerido.
 - Desventaja: Depende de la última copia completa.
-2. **Almacenamiento<a name="_page14_x69.00_y435.00"></a> de las Copias** 
+## 10.2 Almacenamiento de las Copias
 - **Almacenamiento local:** 
 - RAID 5 para tolerancia a fallos y redundancia. 
 - Acceso rápido a copias en servidores internos.
 - **Almacenamiento en la nube:** 
 - Contratación de servicios AWS S3. 
 - Alta disponibilidad y recuperación en caso de pérdida de datos local.
-3. **Restauración<a name="_page14_x69.00_y640.00"></a> de Sistemas y Datos** 
+## 10.3 Restauración de Sistemas y Datos
 - **Procedimientos de restauración:**
 1. Evaluar la causa del fallo. 
 1. Seleccionar la copia de seguridad adecuada. 
@@ -806,7 +805,7 @@ Se realizarán pruebas de intrusión periódicas para identificar vulnerabilidad
 - Aplicar las copias incrementales o completas.
 - Verificar la integridad de los datos restaurados.
 - Reiniciar los servicios afectados.
-4. **Mecanismos<a name="_page15_x69.00_y152.00"></a> de Redundancia** 
+## 10.4 Mecanismos de Redundancia
 - **Sistemas de alimentación:**
 - SAIs 
 - Garantizar la disponibilidad de energía en caso de cortes eléctricos.
@@ -816,7 +815,7 @@ Se realizarán pruebas de intrusión periódicas para identificar vulnerabilidad
 - Configurar replicación a través de la nube para proteger la información.
 - **Backup distribuido:** 
 - Tendremos otra copia en otro lugar distinto a donde está situado nuestro CPD (estará en un centro de datos ubicado en Benirrera, Valencia).
-5. **Documentación<a name="_page15_x69.00_y377.00"></a> y Pruebas Regulares** 
+## 10.5 Documentación y Pruebas Regulares
 - **Documentación de procedimientos:**
 - Guías claras para el equipo técnico sobre la configuración y el monitoreo de las copias de seguridad y el procedimiento para restaurar datos y sistemas.
 - **Pruebas regulares:** 
