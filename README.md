@@ -62,7 +62,7 @@
 -[10.3 Restauración de Sistemas y Datos](#103-restauración-de-sistemas-y-datos)  
 -[10.4 Mecanismos de Redundancia](#104-mecanismos-de-redundancia)  
 -[10.5 Documentación y Pruebas Regulares](#105-documentación-y-pruebas-regulares)  
--[11. Manual del Usuario del CPD](#11-manual-del-usuario-del-cpd)  
+-[11. Manual de Usuario del CPD](#11-manual-de-usuario-del-cpd)  
 -[11.1 Acceso al Sistema](#111-acceso-al-sistema)  
 -[11.2 Uso de Recursos del CPD](#112-uso-de-recursos-del-cpd)  
 -[11.3 Resolución de Problemas](#113-resolución-de-problemas)  
