@@ -55,6 +55,7 @@
 -[9.4 Políticas de Seguridad](#94-políticas-de-seguridad)  
 -[9.5 Políticas de Protección de Datos](#95-políticas-de-protección-de-datos)  
 -[9.6 Seguridad en Dispositivos Móviles](#96-seguridad-en-dispositivos-móviles)   
+-[9.7 Resultado esperado](#98-resultado-esperado) 
 
 ## 11. Diseño del Plan de Recuperación ante Desastres  
 ### 11.1 Estrategia de Copias de Seguridad  
@@ -656,8 +657,9 @@ Vamos a contratar servicios externos que serán los de AWS S3 que es de Amazon. 
 - 3 Servidores: Que serán el corazón del CPD donde se alojan las aplicaciones, servicios y bases de datos.  
 - 1 NAS: Lo tendremos conectado a la red para poder guardar y compartir los datos.  
 - 1 SAI: Nos permitirá poder guardar información cuando tengamos un fallo eléctrico temporal y no tendremos suministro eléctrico.
-3. Diseño<a name="_page9_x69.00_y312.00"></a> de la seguridad del sistema 
-1. Medidas<a name="_page9_x69.00_y353.00"></a> de Protección
+  
+## 9. Diseño de la seguridad del sistema 
+## 9.1 Medidas de Protección
 - **3.1.1 Firewall perimetral:** 
 
 Se instalará un sistema de cortafuegos para filtrar el tráfico que entra y sale del CPD (Como el software Waf) . Se configurarán reglas específicas para bloquear Direcciones ip sospechosas, limitar protocolos no necesarios y garantir que solo las conexiones seguras pudiendo acceder al sistema. Ejemplo: bloqueo automático de cualquier intento de conexión desde direcciones ip que no cumplan los requisitos de seguridad establecidos.
@@ -672,7 +674,7 @@ Se instalará un sistema de cortafuegos para filtrar el tráfico que entra y sal
 
   Eso garantiza que los datos sensibles, como las contraseñas o las preferencias de productos, no sean interceptados por agentes externos
 
-2. Protección<a name="_page10_x69.00_y73.00"></a> contra amenazas internas
+## 9.2 Protección contra Amenazas Internas
 - **3.2.1 Cifrado de base de datos** 
 
   Se utilizará algoritmos de cifrado como AES-256 Para proteger la información almacenada. Eso significa que, si un atacante consigue acceder a la base de datos, no podrá leer los datos sin las llaves de descifrado.
@@ -681,7 +683,7 @@ Se instalará un sistema de cortafuegos para filtrar el tráfico que entra y sal
 
 Se implementará un modelo de mínimo privilegio que garantice que cada usuario del sistema solo tiene acceso a los datos necesarios para su función. Por ejemplo, los empleados solo pueden ver los datos relacionados con sus tareas y no pueden acceder a la información de los clientes. 
 
-3. Respuesta<a name="_page10_x69.00_y295.00"></a> ante ciberataques
+## 9.3 Respuesta ante Ciberataques
 - **3.3.1 Copias de seguridad regulares:**
 
 Se configurarán copias de seguridad automatizadas que se guardarán en servidores redundantes, situados en ubicaciones geográficas diferentes para prevenir la perdida de datos en caso de un ataque o desastre
@@ -692,7 +694,7 @@ Ejemplo: si un ataque de ransomware afecta el CPD principal, se podrá restaurar
 
 Se realizarán pruebas de intrusión periódicas para identificar vulnerabilidades en el sistema antes d que puedan ser explotadas por atacantes externos o internos. 
 
-4. Politicas de seguridad
+## 9.4 Politicas de Seguridad
 - **3.4.2 Autenticación multifactorial (MFA)** 
 
   Todos los administradores y empleados del supermercado que gestionan la plataforma tendrán que utilizar MFA. Eso incluye la combinación de una contraseña según el factor de autenticación, como un código enviado a un móvil o una aplicación de autenticación como Google authenticator
@@ -713,7 +715,7 @@ Se realizarán pruebas de intrusión periódicas para identificar vulnerabilidad
 
   Se registrarán todas las acciones realizadas para cada usuario, incluyendo acciones de administrador. Así ayudara a identificar cualquier actividad sospecha o no autorizada.
 
-5. Políticas<a name="_page12_x69.00_y73.00"></a> de protección de datos 
+## 9.5 Políticas de Protección de Datos 
 
    Análisis de datos sensible: 
 
@@ -731,7 +733,7 @@ Se realizarán pruebas de intrusión periódicas para identificar vulnerabilidad
 
    El sistema generará alertas automáticas en caso de actividades sospechosas, como cambios masivos a la base de datos o el intento de acceso desde una ubicación geográfica no reconocida.
 
-6. Seguridad<a name="_page12_x69.00_y526.00"></a> en dispositivos móviles 
+## 9.6 Seguridad en Dispositivos Móviles 
 
    Como que muchos usuarios accederán a la red social desde dispositivos móviles, tenemos que implementar reglas específicas para proteger estas conexiones: 
 
@@ -751,7 +753,7 @@ Se realizarán pruebas de intrusión periódicas para identificar vulnerabilidad
 
   Todos los datos almacenados localmente a la app se cifran para evitar el robo en caso de pérdida o robo del dispositivo
 
-7. Resultado<a name="_page13_x69.00_y249.00"></a> esperado
+## 9.7 Resultado esperado
 
    Con este diseño de seguridad, se espera obtener: Confidencialidad: 
 
