@@ -341,7 +341,7 @@ Act6 se encarga Dani
 
 Act7 se encarga Dani 
 
-## 5. Identificación de Recursos Necesarios.
+## 5. Identificación de Recursos Necesarios
 
 Determinar la disponibilidad de recursos:
 
