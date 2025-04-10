@@ -14,13 +14,13 @@
 -[1.2 Requisitos Funcionales](#12-requisitos-funcionales)  
 -[1.3 Requisitos No Funcionales](#13-requisitos-no-funcionales)  
 -[2. Análisis de Requisitos](#2-análisis-de-requisitos)  
-### 4.1 Requisitos de Hardware  
-### 4.2 Requisitos de Software  
-### 4.3 Requisitos de Red  
-### 4.4 Capacidades Técnicas Necesarias  
-### 4.5 Ejemplo de Escenario de Uso  
+-[2.1 Requisitos de Hardware](#21-requisitos-de-hardware)  
+-[2.2 Requisitos de Software](#22-requisitos-de-software)  
+-[2.3 Requisitos de Red](#23-requisitos-de-red)    
+-[2.4 Capacidades Técnicas Necesarias](#24-capacidades-técnicas-necesarias)
+-[2.5 Ejemplo de Escenario de Uso](#25-ejemplo-de-escenario-de-uso)  
 
-## 5. Cronograma del Proyecto  
+## 3. Cronograma del Proyecto  
 
 ## 6. Asignación de Roles y Responsabilidades  
 ### 6.1 Roles del Equipo  
@@ -169,7 +169,7 @@ Analizaremos las necesidades de hardware, software y red.
 
 **FUNCIONES DEL CPD** 
 
-1. **Requisitos<a name="_page5_x69.00_y339.00"></a> de Hardware**
+## 2.1 Requisitos de Hardware
 
 Nuestro CPD no requerirá una gran cantidad de hardware ni de última generación, ya que la red social en la que nos enfocaremos está en proceso de darse a conocer y aún no cuenta con muchos usuarios simultáneamente. Si en el futuro logra ganar popularidad, entonces consideraremos añadir más hardware y potencia.
 
@@ -183,7 +183,7 @@ Nuestro CPD no requerirá una gran cantidad de hardware ni de última generació
 - Almacenamiento inicial de 5 TB para imágenes y datos.
 - Crecimiento estimado de 10 TB en el primer año dependiendo del éxito de la plataforma. 
 - Discos SSD para acceso rápido a imágenes y datos.
-2. **Requisitos<a name="_page5_x69.00_y666.00"></a> de Software**
+## 2.2 Requisitos de Software
 - **Sistema Operativo:** 
 - Windows Server 2022 
 - **Bases de Datos:** 
@@ -191,7 +191,7 @@ Nuestro CPD no requerirá una gran cantidad de hardware ni de última generació
 - **Seguridad:** 
 - Certificados SSL/TLS para proteger las comunicaciones.
 - Cifrado de contraseñas y datos sensibles.
-3. **Requisitos<a name="_page6_x69.00_y242.00"></a> de Red**
+## 2.3 Requisitos de Red
 - **Conectividad:** 
 - Alto ancho de banda para manejar el tráfico de imágenes, búsquedas concurrentes. 
 - Iniciamos con 1 Gbps escalable a 10 Gbps, dependiendo de los usuarios concurrentes y el tráfico de imágenes de la red social.
@@ -207,7 +207,7 @@ Nuestro CPD no requerirá una gran cantidad de hardware ni de última generació
 
 **FUNCIONES DE LA RED SOCIAL** 
 
-4. **Capacidades<a name="_page6_x69.00_y575.00"></a> Técnicas Necesarias**
+## 2.4 Capacidades Técnicas Necesarias
 - **Usuarios concurrentes:** 
 - Estimación inicial de 1000 usuarios activos a la vez.
 - Escalabilidad para poder llegar a soportar hasta 10000 usuarios a la vez en nuestra red social. 
@@ -215,7 +215,7 @@ Nuestro CPD no requerirá una gran cantidad de hardware ni de última generació
 - Sistema que permita almacenar, procesar y mostrar imágenes con rapidez. 
 - **Actualización en tiempo real:** 
 - Servicios en tiempo real para actualizar precios de productos en el mismo momento. 
-5. **Ejemplo<a name="_page7_x69.00_y115.00"></a> de un posible escenario para el uso de la red social**
+## 2.5 Ejemplo de un posible escenario para el uso de la red social
 - **Subida de foto:** 
 - El usuario sube una imagen del producto y el sistema identifica de qué tipo de producto se trata. 
 - La foto y la información del precio se almacenan en la base de datos. 
