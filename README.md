@@ -65,14 +65,13 @@
 -[11. Manual de Usuario del CPD](#11-manual-de-usuario-del-cpd)  
 -[11.1 Acceso al Sistema](#111-acceso-al-sistema)  
 -[11.2 Uso de Recursos del CPD](#112-uso-de-recursos-del-cpd)  
--[11.3 Resolución de Problemas](#113-resolución-de-problemas)  
-
-## 13. Guía de Administración del CPD  
-### 13.1 Gestión de Servidores  
-### 13.2 Gestión de Red  
-### 13.3 Seguridad del CPD  
-### 13.4 Procedimientos de Recuperación  
-### 13.5 Documentación y Auditorías  
+-[11.3 Resolución de Problemas](#113-resolución-de-problemas)   
+-[12. Guía de Administración del CPD](#12-guía-de-administración-del-cpd)    
+-[12.1 Gestión de Servidores](#121-gestión-de-servidores)  
+-[12.2 Gestión de Red](#122-gestión-de-red)  
+-[12.3 Seguridad del CPD](#123-seguridad-del-cpd)  
+-[12.4 Procedimientos de Recuperación](#124-procedimientos-de-recuperación)   
+-[12.5 Documentación y Auditorías](#125-docuementación-y-auditorías)  
 
 ## 14. Instalación del Servidor  
 ### 14.1 Instalación de RAID 5 por Software  
@@ -853,11 +852,11 @@ El manual de los usuarios servirá para poder orientar a todos los Usuarios que 
 - Revisar el estado de la conexión física y la configuración de red. 
 - Notificar al administrador y servicio técnico si hay caídas del servicio. 
 - Revisar que las conexiones dentro de los servidores esta todo correcto y no hay ningún cable de red desconectado. 
-6. Guía<a name="_page17_x69.00_y285.00"></a> de Administración del CPD
+## 12. Guía de Administración del CPD
 
 Esta guía está destinada a los administradores responsables de la gestión, mantenimiento y seguridad del CPD. Contiene procedimientos clave alineados con la arquitectura definida en el proyecto, asegurando el funcionamiento óptimo, seguro y eficiente del sistema. 
 
-1. Gestión<a name="_page17_x69.00_y414.00"></a> de Servidores
+## 12.1 Gestión de Servidores
 - **Controlador Principal** 
 - Revisar periódicamente el estado de Active Directory, DNS y DHCP, asegurando su correcta integración con la segmentación de VLANs establecida en la infraestructura.
 - Aplicar parches y actualizaciones de seguridad mensualmente, siguiendo las políticas de protección del CPD.
@@ -870,7 +869,7 @@ Esta guía está destinada a los administradores responsables de la gestión, ma
 - Configurar sincronización automática con el NAS y AWS S3 para asegurar la redundancia geográfica. 
 - Realizar pruebas de restauración trimestrales para validar la efectividad del plan de recuperación ante desastres.
 - Situado en diferente lugar 
-2. Gestión<a name="_page18_x69.00_y170.00"></a> de Red
+## 12.2 Gestión de Red
 - **VLAN’s** 
 - Revisar configuraciones de VLANs (10, 20 y 30) para mantener la segmentación definida en la documentación técnica.
 - Asegurar el aislamiento de tráfico entre VLANs conforme a las políticas de seguridad establecidas.
@@ -880,7 +879,7 @@ Esta guía está destinada a los administradores responsables de la gestión, ma
 - **Firewall** 
 - Mantener las reglas de firewall actualizadas conforme a las estrategias de protección contra ciberataques.
 - Configurar alertas automáticas para actividades sospechosas mediante herramientas de detección y prevención de intrusos.
-3. Seguridad<a name="_page18_x69.00_y580.00"></a> del CPD
+## 12.3 Seguridad del CPD
 - **Control de Acceso Físico** 
 - Solo personal autorizado puede acceder al CPD.
 - Implementación de controles biométricos o tarjetas de acceso para restringir la entrada. 
@@ -896,7 +895,7 @@ Esta guía está destinada a los administradores responsables de la gestión, ma
 - **Copias de Seguridad** 
 - Confirmar la ejecución correcta de copias completas e incrementales conforme al plan de respaldo documentado.
 - Almacenar copias redundantes en local y en la nube mediante AWS S3 y NAS 
-4. Procedimientos<a name="_page19_x69.00_y359.00"></a> de Recuperación
+## 12.4 Procedimientos de Recuperación
 - **Restauración de Servidores** 
 - Identificar la causa del fallo mediante el análisis de registros del sistema.
 - Restaurar la infraestructura básica desde la copia completa almacenada en el NAS. 
@@ -904,7 +903,7 @@ Esta guía está destinada a los administradores responsables de la gestión, ma
 - **Plan de Recuperación Ante Desastres**
 - Seguir el procedimiento documentado para la activación del plan de contingencia en caso de fallo crítico.
 - Contactar con el personal clave según el protocolo establecido y escalar incidentes según su nivel de gravedad.
-5. Documentación<a name="_page19_x69.00_y650.00"></a> y Auditorías
+## 12.5 Documentación y Auditorías
 - Mantener registros detallados de todas las actividades del CPD para auditorías y revisiones periódicas. 
 - Realizar auditorías de seguridad y rendimiento cada seis meses para evaluar el cumplimiento de las políticas establecidas.
 - Actualizar la documentación técnica tras cualquier cambio significativo en la infraestructura del CPD. 
