@@ -55,7 +55,7 @@
 -[9.4 Políticas de Seguridad](#94-políticas-de-seguridad)  
 -[9.5 Políticas de Protección de Datos](#95-políticas-de-protección-de-datos)  
 -[9.6 Seguridad en Dispositivos Móviles](#96-seguridad-en-dispositivos-móviles)   
--[9.7 Resultado esperado](#98-resultado-esperado) 
+-[9.7 Resultado Esperado](#98-resultado-esperado) 
 
 ## 11. Diseño del Plan de Recuperación ante Desastres  
 ### 11.1 Estrategia de Copias de Seguridad  
@@ -694,7 +694,7 @@ Ejemplo: si un ataque de ransomware afecta el CPD principal, se podrá restaurar
 
 Se realizarán pruebas de intrusión periódicas para identificar vulnerabilidades en el sistema antes d que puedan ser explotadas por atacantes externos o internos. 
 
-## 9.4 Politicas de Seguridad
+## 9.4 Políticas de Seguridad
 - **3.4.2 Autenticación multifactorial (MFA)** 
 
   Todos los administradores y empleados del supermercado que gestionan la plataforma tendrán que utilizar MFA. Eso incluye la combinación de una contraseña según el factor de autenticación, como un código enviado a un móvil o una aplicación de autenticación como Google authenticator
@@ -753,7 +753,7 @@ Se realizarán pruebas de intrusión periódicas para identificar vulnerabilidad
 
   Todos los datos almacenados localmente a la app se cifran para evitar el robo en caso de pérdida o robo del dispositivo
 
-## 9.7 Resultado esperado
+## 9.7 Resultado Esperado
 
    Con este diseño de seguridad, se espera obtener: Confidencialidad: 
 
