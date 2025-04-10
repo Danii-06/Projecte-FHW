@@ -71,7 +71,7 @@
 -[12.2 Gestión de Red](#122-gestión-de-red)  
 -[12.3 Seguridad del CPD](#123-seguridad-del-cpd)  
 -[12.4 Procedimientos de Recuperación](#124-procedimientos-de-recuperación)   
--[12.5 Documentación y Auditorías](#125-docuementación-y-auditorías)  
+-[12.5 Documentación y Auditorías](#125-documentación-y-auditorías)  
 
 ## 14. Instalación del Servidor  
 ### 14.1 Instalación de RAID 5 por Software  
