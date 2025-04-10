@@ -129,7 +129,7 @@ En el CPD se encargará de almacenar toda la información de la red social más 
 
   Almacenar copias de seguridad de la aplicación por si hay algún problema poder tener los datos almacenados y no perder la información.  
 
-2. **Requisitos Funcionales**
+## 1.2. **Requisitos Funcionales**
 - **Gestión de usuarios de la aplicación** 
 - Que se puedan registrar y autentificar en la aplicación, tener una gestión de diferentes roles como (admin, usuario), también añadir una funcionalidad para que los usuarios puedan editar su perfil y así añadir los productos de los supermercados a la red social.  
 - **Gestión de los productos** 
@@ -147,7 +147,7 @@ En el CPD se encargará de almacenar toda la información de la red social más 
 - Permitir a los administradores registrar la ubicación de los supermercados. 
 - Funcionalidad para que los usuarios puedan buscar supermercados por ubicación. 
 
-<a name="_page4_x69.00_y365.00"></a>**1.4 Requisitos No Funcionales**
+## **1.4 Requisitos No Funcionales**
 
 - **Escalabilidad**  
 - Posibilidad de poder aumentar la cantidad de usuarios y así el volumen de datos generados y almacenados. 
