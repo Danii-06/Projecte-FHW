@@ -37,9 +37,9 @@
 -[6.3 Plan de Contingencias](#63-plan-de-contingencias)  
 -[6.4 Protocolos de Actuación](#64-protocolos-de-actuación)    
 -[7. Diseño de la Arquitectura del Sistema](#7-diseño-de-la-arquitectura-del-sistema)  
--[7.1 Segmentación por VLAN's](#71-segmentación-por.vlans)  
--[7.2 Conectividad y Flujo de Datos](#72-conectividad-y-flujo-de-datos)
--[7.3 Seguridad y Respaldo](#73-seguridad-y-respaldo)
+-[7.1 Segmentación por VLAN's](#71-segmentación-por.vlan's)  
+-[7.2 Conectividad y Flujo de Datos](#72-conectividad-y-flujo-de-datos)  
+-[7.3 Seguridad y Respaldo](#73-seguridad-y-respaldo)  
 
 
 ### 8.4 Servidores  
