@@ -72,7 +72,7 @@
 -[12.3 Seguridad del CPD](#123-seguridad-del-cpd)  
 -[12.4 Procedimientos de Recuperación](#124-procedimientos-de-recuperación)   
 -[12.5 Documentación y Auditorías](#125-documentación-y-auditorías)  
--[13. Instalación del Servidor](#13-instalación-del-servidor)  
+-[13. Instalación del Servidor y del dominio](#13-instalación-del-servidor-y-del-dominio)  
 -[13.1 Instalación de RAID 5 por Software](#131-instalación-de-raid-5-por-software)  
 -[13.2 Creación de los Usuarios para los Trabajadores](#132-creación-de-los-usuarios-para-los-trabajadores)  
 -[13.3 Instalación de Aomei Backupper Server y una Copia del Disco del Sistema Operativo](#133-instalación-de-aomei-backupper-server-y-una-copia-del-disco-del-sistema-operativo)  
@@ -909,7 +909,7 @@ Esta guía está destinada a los administradores responsables de la gestión, ma
 Página 21 de 21  Daniel Dumea, Jordi Escriva, Ivan Catala
 
 
-## 13. Instalación del Servidor
+## 13. Instalación del Servidor y del dominio
 
 Primero que todo, empezamos escogiendo un ordenador de todos los que habían para empezar con el proceso del servidor. Una vez escogido vimos que tenía un disco duro de 500GB lo que era bastante capacidad, pero decidimos añadir otro disco después de la instalación del sistema para hacer un RAID. 
 
@@ -1102,6 +1102,7 @@ Lo primero que hacemos es hacer como que nos falla un disco del raid 5 para pode
 ![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%2034.png)
 
 **FIGURA 31 –** Aquí en esta imagen podemos ver que el Disco 2/3/7 están montados en RAID 5. El Ventoy es un USB que pusimos para poder guardar las capturas para luego para poder hacer la documentación del proyecto.
-Pagina 24 de 24  Daniel Dumea, Ivan Catalá, Jordi Escriva
+
+## 14. Organización de usuarios en el dominio
 
 
