@@ -1115,19 +1115,19 @@ FIGURA 32- Vamos a crear una unidad organizativa en el dominio para poder ordena
 
 FIGURA 33- Crearemos una GPO de la unidad creada y la editaremos.
 
-![](Aspose.Words.75de3c53-962e-45d0-8ac4-e8e90fa40068.003.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/imagen%2037.png)
 
 FIGURA 34- Vamos a poner una seguridad de la contraseña de los usuarios tengan un mínimo de 12 caracteres. 
 
-![](Aspose.Words.75de3c53-962e-45d0-8ac4-e8e90fa40068.004.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/imagen%2047.png)
 
 FIGURA 35- Historial de 2 contraseñas se puedan recordar en el sistema por usuario.
 
-![](Aspose.Words.75de3c53-962e-45d0-8ac4-e8e90fa40068.005.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/imagen%2039.png)
 
 FIGURA 36- A la que el usuario falle 3 contraseñas seguidas se le bloqueara la cuenta. 
 
-![](Aspose.Words.75de3c53-962e-45d0-8ac4-e8e90fa40068.006.jpeg)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/imagen%2040.png)
 
 FIGURA 37- El tiempo de bloqueo será de 1 hora a no ser que el administrador acuda a el problema. 
 
