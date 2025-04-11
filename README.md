@@ -78,7 +78,9 @@
 -[13.3 Instalación de Aomei Backupper Server y una Copia del Disco del Sistema Operativo](#133-instalación-de-aomei-backupper-server-y-una-copia-del-disco-del-sistema-operativo)  
 -[13.4 Restauración de la Copia de Seguridad del Sistema](#134-restauración-de-la-copia-de-seguridad-del-sistema)  
 -[13.5 Ubuntu Server](#135-ubuntu-server)  
--[13.6 Romper el RAID y Recuperarlo](#136-romper-el-raid-y-recuperarlo)  
+-[13.6 Romper el RAID y Recuperarlo](#136-romper-el-raid-y-recuperarlo)   
+-[14. Organización de usuarios en el dominio](#14-Organización-de-usuarios-en-el-dominio)  
+
 
 ---
 
