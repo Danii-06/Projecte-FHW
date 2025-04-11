@@ -1135,9 +1135,9 @@ FIGURA 36- A la que el usuario falle 3 contraseñas seguidas se le bloqueara la 
 FIGURA 37- El tiempo de bloqueo será de 1 hora a no ser que el administrador acuda a el problema. 
 
 ## 15. Cierre del Proyecto
-Este proyecto ha sido una gran oportunidad para aplicar y reforzar nuestros conocimientos sobre redes, sistemas, seguridad y planificación de infraestructuras IT reales. Hemos desarrollado una solución funcional basada en un CPD virtual que respalda una red social centrada en la comparación de precios de productos de supermercado, con el objetivo de ayudar a los usuarios a ahorrar tiempo y dinero.
+Después de semanas de trabajo, planificación, configuración y muchas decisiones en equipo, hemos llegado al final de este proyecto. Ha sido un proceso en el que no solo hemos aprendido a montar un CPD virtual funcional, sino también a colaborar, resolver problemas reales y adaptarnos a los cambios que surgieron por el camino.
 
-Durante el proceso, aprendimos a trabajar en equipo, a organizarnos eficazmente, y a superar los retos técnicos que surgieron. También implementamos prácticas clave como segmentación por VLANs, control de accesos, redundancia de datos, y estrategias de recuperación ante fallos.
+Nuestro objetivo fue crear una red social útil, enfocada en ayudar a los usuarios a encontrar productos de supermercado al mejor precio en su zona. Detrás de esa idea hay todo un trabajo técnico que incluye la segmentación de red con VLANs, control de acceso mediante Active Directory, monitorización de recursos, copias de seguridad automatizadas y una infraestructura preparada para crecer y mantenerse segura.
 
-Este repositorio contiene toda la información técnica y documentación necesaria para comprender la arquitectura del CPD, la configuración del sistema, y la funcionalidad del proyecto.
+Nos vamos con el orgullo de haber llevado una idea desde cero hasta un entorno estructurado y documentado. Y aunque ha habido momentos de duda o contratiempos, supimos apoyarnos en el grupo y avanzar paso a paso.
 
