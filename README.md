@@ -80,7 +80,7 @@
 -[13.5 Ubuntu Server](#135-ubuntu-server)  
 -[13.6 Romper el RAID y Recuperarlo](#136-romper-el-raid-y-recuperarlo)   
 -[14. Organización de usuarios en el dominio](#14-Organización-de-usuarios-en-el-dominio)  
-
+-[15. Cierre del Proyecto](#15-Cierre-del-Proyecto)
 
 ---
 
@@ -1127,9 +1127,17 @@ FIGURA 35- Historial de 2 contraseñas se puedan recordar en el sistema por usua
 
 ![](https://github.com/Danii-06/Projecte-FHW/blob/main/imagen%2039.png)
 
+
 FIGURA 36- A la que el usuario falle 3 contraseñas seguidas se le bloqueara la cuenta. 
 
 ![](https://github.com/Danii-06/Projecte-FHW/blob/main/imagen%2040.png)
 
 FIGURA 37- El tiempo de bloqueo será de 1 hora a no ser que el administrador acuda a el problema. 
+
+## 15. Cierre del Proyecto
+Este proyecto ha sido una gran oportunidad para aplicar y reforzar nuestros conocimientos sobre redes, sistemas, seguridad y planificación de infraestructuras IT reales. Hemos desarrollado una solución funcional basada en un CPD virtual que respalda una red social centrada en la comparación de precios de productos de supermercado, con el objetivo de ayudar a los usuarios a ahorrar tiempo y dinero.
+
+Durante el proceso, aprendimos a trabajar en equipo, a organizarnos eficazmente, y a superar los retos técnicos que surgieron. También implementamos prácticas clave como segmentación por VLANs, control de accesos, redundancia de datos, y estrategias de recuperación ante fallos.
+
+Este repositorio contiene toda la información técnica y documentación necesaria para comprender la arquitectura del CPD, la configuración del sistema, y la funcionalidad del proyecto.
 
