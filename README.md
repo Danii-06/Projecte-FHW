@@ -1105,4 +1105,29 @@ Lo primero que hacemos es hacer como que nos falla un disco del raid 5 para pode
 
 ## 14. Organización de usuarios en el dominio
 
+Vamos a crear las políticas se seguridad en nuestro dominio para la seguridad de la empresa y la de nuestros usuarios.
+
+![](Aspose.Words.75de3c53-962e-45d0-8ac4-e8e90fa40068.001.png)
+
+FIGURA 32- Vamos a crear una unidad organizativa en el dominio para poder ordenar los usuarios en sus respectivos puestos de trabajo. 
+
+![](Aspose.Words.75de3c53-962e-45d0-8ac4-e8e90fa40068.002.png)
+
+FIGURA 33- Crearemos una GPO de la unidad creada y la editaremos.
+
+![](Aspose.Words.75de3c53-962e-45d0-8ac4-e8e90fa40068.003.jpeg)
+
+FIGURA 34- Vamos a poner una seguridad de la contraseña de los usuarios tengan un mínimo de 12 caracteres. 
+
+![](Aspose.Words.75de3c53-962e-45d0-8ac4-e8e90fa40068.004.jpeg)
+
+FIGURA 35- Historial de 2 contraseñas se puedan recordar en el sistema por usuario.
+
+![](Aspose.Words.75de3c53-962e-45d0-8ac4-e8e90fa40068.005.jpeg)
+
+FIGURA 36- A la que el usuario falle 3 contraseñas seguidas se le bloqueara la cuenta. 
+
+![](Aspose.Words.75de3c53-962e-45d0-8ac4-e8e90fa40068.006.jpeg)
+
+FIGURA 37- El tiempo de bloqueo será de 1 hora a no ser que el administrador acuda a el problema. 
 
