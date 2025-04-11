@@ -1,4 +1,4 @@
-# G4 - CPD para una red social orientada a productos de supermercado.
+# G4 - CPD Para una Red Social Orientada a Productos de Supermercado.
 
 ### Integrantes del grupo:
 - Daniel Pablo Dumea
