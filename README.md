@@ -1107,11 +1107,11 @@ Lo primero que hacemos es hacer como que nos falla un disco del raid 5 para pode
 
 Vamos a crear las políticas se seguridad en nuestro dominio para la seguridad de la empresa y la de nuestros usuarios.
 
-![](Aspose.Words.75de3c53-962e-45d0-8ac4-e8e90fa40068.001.png)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/imagen35.png)
 
 FIGURA 32- Vamos a crear una unidad organizativa en el dominio para poder ordenar los usuarios en sus respectivos puestos de trabajo. 
 
-![](Aspose.Words.75de3c53-962e-45d0-8ac4-e8e90fa40068.002.png)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/imagen36.png)
 
 FIGURA 33- Crearemos una GPO de la unidad creada y la editaremos.
 
@@ -1119,7 +1119,7 @@ FIGURA 33- Crearemos una GPO de la unidad creada y la editaremos.
 
 FIGURA 34- Vamos a poner una seguridad de la contraseña de los usuarios tengan un mínimo de 12 caracteres. 
 
-![](https://github.com/Danii-06/Projecte-FHW/blob/main/imagen%2047.png)
+![](https://github.com/Danii-06/Projecte-FHW/blob/main/imagen38.png)
 
 FIGURA 35- Historial de 2 contraseñas se puedan recordar en el sistema por usuario.
 
