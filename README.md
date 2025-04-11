@@ -488,7 +488,7 @@ Para el tema de monitorización vamos a utilizar Prometheus ya que es más escal
 # 7. Diseño de la arquitectura del sistema 
 ![](https://github.com/Danii-06/Projecte-FHW/blob/main/IMAGEN%202.png)
 
-## 7.1 Segmentación por VLAN’s 
+## 7.1 Segmentación por VLAN's 
 - **VLAN 10 – Usuarios internos** 
 - Contiene las estaciones de trabajo con direcciones en el rango 192.168.10.X 
 - Se conectan a los switches de red para acceder a los servicios del CPD.
